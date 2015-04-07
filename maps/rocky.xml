@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map height="69" width="73">
+    <game seed="8822" rounds="2300"/>
+    <symbols>
+        <symbol terrain="NORMAL" type="TERRAIN" character="n"/>
+        <symbol terrain="VOID" type="TERRAIN" character="v"/>
+        <symbol team="A" type="HQ" character="a"/>
+        <symbol team="B" type="HQ" character="b"/>
+        <symbol team="A" type="TOWER" character="A"/>
+        <symbol team="B" type="TOWER" character="B"/>
+    </symbols>
+    <data>
+<![CDATA[
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v8 v8 n8 v8 v8 v8 n8 n8 v8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 v16 v16 v16 v16 v2 v2 v2 v2 v2 v2
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v8 v8 v8 n8 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 n16 v16 v16 v2 v2 v2 v2 v2 v2
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 B16 v16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 v16 v16 v2 v2 v2 v2 v2 v2
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v8 n16 n16 v16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 v16 n16 v16 v16 v16 v16 v16 v16
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 v16 v16 v16 v16 v16
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 v16 v16 n16 v16 v16 v16 v16
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 v16 n16 v16 v16 v16 v16
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 v16 v16 v16 v16 v16
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 v8 n8 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v2 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v16 v16 v16 v16 v16
+n8 n8 n8 n8 n8 n8 n8 n8 n2 n2 v2 v2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 v16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v8 v8 n8 v8 n8 n16 v16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v16 v16 v2 v2 v2
+n8 n8 n8 n8 n8 n8 n8 n8 n2 n2 n2 v2 n2 b2 n2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v8 n8 v8 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v8 n8 v8 n8 v8 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v8 n8 v16 v2 v2 v2
+n8 n8 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 v2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 v8 v8 n8 n16 n8 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 v8 v8 n8 v8 v8 v8 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 v16 v2 v2 v2
+n8 n8 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 v2 n2 v2 n2 n2 n2 n2 n2 n2 v2 n2 v2 n2 v8 n8 n8 n8 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 v8 v8 n8 v8 v8 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 v16 v2 v2 v2
+n8 n8 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 v2 n2 n2 n2 n2 n2 n2 n2 v2 v2 n2 v2 n8 n8 n8 n8 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 v8 v8 v8 v8 n16 v16 n16 v16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 v2 v2 v2
+n8 n8 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 n2 v2 v2 v2 n2 v8 n8 n8 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 v8 v8 v8 v16 v16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v16 n16 v16 v2 v2 v2
+n8 n8 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 v2 v2 v2 B8 n8 v8 n16 n16 n16 n16 n8 n8 n8 n8 n8 v8 n8 v8 v16 v16 v16 v16 v16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 v16 v2 v2 v2
+n8 v8 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 n2 v2 v2 v2 n2 n8 n8 n8 n8 n16 n16 n8 n8 n8 n8 n8 v8 n8 v8 v16 v16 v16 v16 v16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 v16 v16 n2 v2 v2
+v8 n8 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 v2 n2 v2 n8 n8 n8 n8 n16 n16 n8 n8 n8 n8 n8 n8 v8 v16 v16 v16 v16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 v2 v2
+v2 n8 v2 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 n2 v2 n2 n2 n2 n8 n8 n8 n16 n16 n16 n8 n8 n8 n8 v16 v16 v16 v16 v16 v16 v16 n16 n16 n16 n8 n8 n8 n8 n8 v8 n16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v2 v2
+v2 v2 v2 v8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 n2 n2 n2 n2 n8 n8 n8 n16 n16 n16 n8 n8 n8 n16 v16 v16 v16 n16 v16 n16 n16 n16 n16 n16 n8 n8 n8 n16 n16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 v2 v2
+v2 v2 v2 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n16 n16 n16 n16 n8 n16 n16 v16 v16 n16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 A16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v2 v2
+v2 v2 v2 v8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n16 n16 n16 n16 v16 n16 v16 v16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 v16 n16 v16 n8 v8 n8 n8 n8 n8 n8 n16 n16 n16 v16 n2 v2
+v2 v8 v8 n8 v8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n16 n16 v16 n16 v16 v16 v16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v8 v8 v8 v8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 v2
+v8 v8 v8 v8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n16 v16 n16 n16 v16 v16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v8 n8 n8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 v16 v2
+n8 v8 v8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 v16 v16 n16 v16 v16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 n8 n8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 v2
+n8 v8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 n2 v2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 v16 n16 v16 v16 v16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 v2
+n8 v8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 n2 v2 v2 v2 n2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n16 n16 n16 v16 v16 v16 n16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 v2
+v8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 v2 n2 v2 v2 v2 v2 v2 v2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n16 n16 v16 v16 v16 v16 n16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n8
+n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 v2 v2 n2 v2 v2 v2 v2 v2 v2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n16 n8 v16 v16 v16 v16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 v2 v2 v2 v2 v2 v2 n2 n2 v2 n2 n2 n2 n8 n8 n8 n8 n16 n8 n8 v16 n16 n16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 n8 v8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 v2 n2 v2 v2 v2 v2 v2 v2 v2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n8 v8 n16 n16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v8 n8 n8 v8 n8 n8 n8 n8 n8 n8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 v2 n2 v2 v2 v2 v2 v2 n2 v2 n2 n8 n8 n8 n8 n8 n8 n8 n8 n16 v16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 v8 v8 n8 n8 v8 v8 n8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 v2 v2 v2 v2 v2 v2 v2 v2 v8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 v8 n8 n8 n8 A8 v8 v8 v8 v8 v8 n2 v2 v2 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 v2 v2 v2 v2 v2 v2 n2 v8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 n8 n8 v8 v8 n8 v8 v8 v8 n8 n2 n2 n2 n2 v2 n2 n2 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 v2 v2 v2 v2 n8 v8 n8 n8 v8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 v8 n8 n8 v8 n8 v2 v2 v2 v2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n2 n2 v2 n2 n2 n2 n2 n8 v8 v8 v8 n8 v8 v8 n8 n8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 v8 n2 v2 v2 v2 v2 v2 v2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v2 v2 n2 v8 v8 v8 v8 v8 B8 n8 n8 n8 v8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 v8 v2 v2 v2 v2 v2 v2 v2 v2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v8 n8 v8 v8 n8 n8 v8 v8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 v16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n2 v2 n2 v2 v2 v2 v2 v2 n2 v2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v8 n8 n8 n8 n8 n8 n8 v8 n8 n8 v8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 n16 n16 v8 n8 n8 n8 n8 n8 n8 n8 n2 n2 n2 v2 v2 v2 v2 v2 v2 v2 n2 v2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v8 v8 n8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 n16 n16 v16 n8 n8 n16 n8 n8 n8 n8 n2 n2 n2 v2 n2 n2 v2 v2 v2 v2 v2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 v16 v16 v16 v16 n8 n16 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 v2 v2 v2 v2 v2 v2 n2 v2 v2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8
+n8 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 n16 v16 v16 v16 v16 n16 n16 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 v2 v2 v2 v2 v2 v2 n2 v2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 v8
+v2 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 n16 v16 v16 v16 n16 n16 n16 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 v2 n2 v2 v2 v2 n2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 v8 n8
+v2 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 v16 v16 v16 n16 v16 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 v2 n2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 v8 n8
+v2 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v8 n8 n8 n8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 v16 v16 n16 v16 v16 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 v8 v8 n8
+v2 v16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 v8 n8 n8 v8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 v16 v16 n16 n16 v16 n16 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 v8 v8 v8 v8
+v2 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 v8 v8 v8 v8 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 v16 v16 v16 n16 v16 n16 n16 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 v8 n8 v8 v8 v2
+v2 n2 v16 n16 n16 n16 n8 n8 n8 n8 n8 v8 n8 v16 n16 v16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 v16 v16 n16 v16 n16 n16 n16 n16 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 v8 v2 v2 v2
+v2 v2 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 B16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 n16 v16 v16 n16 n16 n8 n16 n16 n16 n16 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 v2 v2 v2
+v2 v2 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 n16 n16 n8 n8 n8 n16 n16 n16 n16 n16 v16 n16 v16 v16 v16 n16 n8 n8 n8 n16 n16 n16 n8 n8 n8 n2 n2 n2 n2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 v8 v2 v2 v2
+v2 v2 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 n16 v8 n8 n8 n8 n8 n8 n16 n16 n16 v16 v16 v16 v16 v16 v16 v16 n8 n8 n8 n8 n16 n16 n16 n8 n8 n8 n2 n2 n2 v2 n2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 v2 n8 v2
+v2 v2 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 v16 v16 v16 v16 v8 n8 n8 n8 n8 n8 n8 n16 n16 n8 n8 n8 n8 v2 n2 v2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n8 v8
+v2 v2 n2 v16 v16 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 v16 v16 v16 v16 v16 v8 n8 v8 n8 n8 n8 n8 n8 n16 n16 n8 n8 n8 n8 n2 v2 v2 v2 n2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 v8 n8
+v2 v2 v2 v16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 v16 v16 v16 v16 v16 v8 n8 v8 n8 n8 n8 n8 n8 n16 n16 n16 n16 v8 n8 A8 v2 v2 v2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n8 n8
+v2 v2 v2 v16 n16 v16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 v16 v16 v8 v8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n8 n8 v8 n2 v2 v2 v2 n2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n8 n8
+v2 v2 v2 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 v16 n16 v16 n16 v8 v8 v8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n8 n8 n8 n8 v2 n2 v2 v2 n2 n2 n2 n2 n2 n2 n2 v2 n2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n8 n8
+v2 v2 v2 v16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 v8 v8 n8 v8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n8 n8 n8 v8 n2 v2 n2 v2 n2 n2 n2 n2 n2 n2 v2 n2 v2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n8 n8
+v2 v2 v2 v16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 v8 v8 v8 n8 v8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n8 n16 n8 v8 v8 v2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 v2 n2 n2 n2 n2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n8 n8
+v2 v2 v2 v16 n8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 v8 n8 v8 n8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 v8 n8 v8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 n2 a2 n2 v2 n2 n2 n2 n8 n8 n8 n8 n8 n8 n8 n8
+v2 v2 v2 v16 v16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 v16 n16 n8 v8 n8 v8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 v16 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 v2 v2 n2 n2 n8 n8 n8 n8 n8 n8 n8 n8
+v16 v16 v16 v16 v16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 v2 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n8 v8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 n2 n8 n8 n8 n8 n8 n8 n8 n8 n8
+v16 v16 v16 v16 v16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n2 n2 n2 n2 n2 n2 n2 n2 n2 n2 v2 n2 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+v16 v16 v16 v16 n16 v16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+v16 v16 v16 v16 n16 v16 v16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+v16 v16 v16 v16 v16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+v16 v16 v16 v16 v16 v16 n16 v16 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 v16 n16 n16 v8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+v2 v2 v2 v2 v2 v2 v16 v16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n16 n16 v16 A16 n16 n16 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+v2 v2 v2 v2 v2 v2 v16 v16 n16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 v16 n8 v8 v8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+v2 v2 v2 v2 v2 v2 v16 v16 v16 v16 v16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n16 n8 v8 n8 n8 v8 v8 v8 n8 v8 v8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+]]>
+    </data>
+</map>

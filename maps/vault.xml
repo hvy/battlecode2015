@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map height="40" width="60">
+    <game seed="7777" rounds="2200"/>
+    <symbols>
+        <symbol terrain="NORMAL" type="TERRAIN" character="n"/>
+        <symbol terrain="VOID" type="TERRAIN" character="v"/>
+        <symbol team="A" type="HQ" character="a"/>
+        <symbol team="B" type="HQ" character="b"/>
+        <symbol team="A" type="TOWER" character="A"/>
+        <symbol team="B" type="TOWER" character="B"/>
+    </symbols>
+    <data>
+<![CDATA[
+v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n10 n10 n10 n10 n10 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n0 n0 n0 n0 n0 n0 n10 n10 n10 v0 v0 v0 v0 v0 v0 v0 v0 v0 n10 n10 n10 n10 n10 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n0 n0 n0 n0 n0 n0 n10 n10 n10 v0 v0 v0 v0 v0 v0 v0 v0 v0 n10 n10 n10 n10 n10 n0 n0 n0 n0 B0 n0 n0 n0 n0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n0 n0 n0 n0 n0 n0 n10 n10 n10 v0 v0 v0 v0 v0 v0 v0 v0 v0 n10 n10 n10 n10 n10 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v0 v0 v0 v0 v0 v0 n10 n10 n10 v0 v0 v0 v0 v0 v0 v0 v0 v0 n10 n10 n10 n10 n10 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v0 v0 v0 v0 v0 v0 n10 n10 n10 v0 v0 v0 v0 v0 v0 v0 v0 v0 n10 n10 n10 n10 n10 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n10 n10 n10 n10 n10 n10 a10 n10 n10 n10 n10 n10 n10 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 B40 n40 n40 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v0 v0 v0 v0 v0 n40 n40 A40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 B0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n20 n20 n20 n20 A20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0
+v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 B40 n40 n40 v0 v0 v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0
+v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0 v0 v0 n40 n40 A40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0
+v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 B20 n20 n20 n20 n20 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 A0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 v40 v40 v40 v40 v40 v40 v40 v40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 B40 n40 n40 v0 v0 v0 v0 v0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n40 n40 A40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 n40 v0 v0 v0 v0 v0 n10 n10 n10 n10 n10 n10 b10 n10 n10 n10 n10 n10 n10 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 v0 v0 v0 v0 n10 n10 n10 n10 n10 v0 v0 v0 v0 v0 v0 v0 v0 v0 n10 n10 n10 v0 v0 v0 v0 v0 v0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n10 n10 n10 n10 n10 v0 v0 v0 v0 v0 v0 v0 v0 v0 n10 n10 n10 v0 v0 v0 v0 v0 v0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n10 n10 n10 n10 n10 v0 v0 v0 v0 v0 v0 v0 v0 v0 n10 n10 n10 n0 n0 n0 n0 n0 n0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 n0 n0 n0 n0 A0 n0 n0 n0 n0 n10 n10 n10 n10 n10 v0 v0 v0 v0 v0 v0 v0 v0 v0 n10 n10 n10 n0 n0 n0 n0 n0 n0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n10 n10 n10 n10 n10 v0 v0 v0 v0 v0 v0 v0 v0 v0 n10 n10 n10 n0 n0 n0 n0 n0 n0 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n10 n10 n10 n10 n10 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0
+v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0 v0
+]]>
+    </data>
+</map>

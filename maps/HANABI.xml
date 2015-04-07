@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map height="30" width="30">
+    <game seed="1836" rounds="2000"/>
+    <symbols>
+        <symbol terrain="NORMAL" type="TERRAIN" character="n"/>
+        <symbol terrain="VOID" type="TERRAIN" character="v"/>
+        <symbol team="A" type="HQ" character="a"/>
+        <symbol team="B" type="HQ" character="b"/>
+        <symbol team="A" type="TOWER" character="A"/>
+        <symbol team="B" type="TOWER" character="B"/>
+    </symbols>
+    <data>
+<![CDATA[
+v15 v15 v15 n50 n40 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+v15 v15 n50 v15 n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+v15 n50 v15 n50 n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40
+n50 v15 n50 n40 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n40 n50
+n40 n40 n40 v15 n15 n15 n15 n15 v15 n40 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 a15 n15 n15 n15 n15 n15 n15 n40 n50 v15
+v15 n15 n15 n15 n15 n15 n15 v15 n50 v15 n50 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n40 n50 v15 n50
+n15 n15 n15 n15 n15 n15 n15 n40 v15 A50 v15 n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40 n50 v15 n50 v15
+n15 n15 n15 n15 n15 n15 n15 v15 n50 v15 n50 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 A40 n50 n50 v15 v15
+n15 n15 n15 n15 n15 n15 n15 n15 v15 n40 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40 n50 v15 n50 v15
+n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n40 n50 v15 n50
+n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n40 n40 n40 n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40 n50 v15
+n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40 n50 v15 n50 n50 n40 v15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n40 n50
+n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n40 v15 n50 v15 n50 v15 A50 n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40
+n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40 n50 n50 v15 v15 n50 v15 v15 n50 n40 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40 v15 v15 v15 v15 v15 n50 n50 n50 n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40 n50 n50 n50 v15 v15 v15 v15 v15 n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n40 n50 v15 v15 n50 v15 v15 n50 n50 n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40 B50 v15 n50 v15 n50 v15 n40 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+n50 n40 v15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n40 n50 n50 v15 n50 n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+v15 n50 n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40 n40 n40 n40 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+n50 v15 n50 n40 v15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+v15 n50 v15 n50 n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n40 v15 n15 n15 n15 n15 n15 n15 n15 n15
+v15 v15 n50 n50 B40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n50 v15 n50 v15 n15 n15 n15 n15 n15 n15 n15
+v15 n50 v15 n50 n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40 v15 B50 v15 n40 n15 n15 n15 n15 n15 n15 n15
+n50 v15 n50 n40 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n50 v15 n50 v15 n15 n15 n15 n15 n15 n15 v15
+v15 n50 n40 n15 n15 n15 n15 n15 n15 b15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n40 v15 n15 n15 n15 n15 v15 n40 n40 n40
+n50 n40 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n40 n50 v15 n50
+n40 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40 n50 v15 n50 v15
+n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n40 v15 n50 v15 v15
+n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n40 n50 v15 v15 v15
+]]>
+    </data>
+</map>

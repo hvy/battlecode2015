@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map height="40" width="60">
+    <game seed="3434" rounds="2000"/>
+    <symbols>
+        <symbol terrain="NORMAL" type="TERRAIN" character="n"/>
+        <symbol terrain="VOID" type="TERRAIN" character="v"/>
+        <symbol team="A" type="HQ" character="a"/>
+        <symbol team="B" type="HQ" character="b"/>
+        <symbol team="A" type="TOWER" character="A"/>
+        <symbol team="B" type="TOWER" character="B"/>
+    </symbols>
+    <data>
+<![CDATA[
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n10 n10 n10 n10 n10 n10 n10 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 v0 n0 n0
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 n15 n10 v10 n10 n10 n10 n10 n10 n0 v0 v0 v0 n0 n0 n0 n0 v0 n0 n0 v0 v0 n0 n0
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 A15 n15 n15 n15 n15 n15 v10 v10 n10 v10 n10 v10 v10 v10 v10 v0 v0 n0 v0 n0 n0 n0 n0 v0 v0 v0 n0 n0 n0 n0
+n20 n20 n20 a20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 n15 n15 v10 v10 n10 n10 n10 v10 n10 n10 n10 n0 n0 v0 v0 v0 n0 n0 v0 v0 v0 n0 n0 v0 n0 n0
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 v15 n10 n10 n10 n10 v10 n10 n10 v10 n10 v10 n10 n10 n10 v0 n0 n0 n0 n0 n0 n0 B0 n0 n0 v0 n0 n0 n0 n0
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 v15 n10 n10 n10 n10 n10 v10 v10 v10 n10 n10 n0 v0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 v0 n0 n0 n0 n0
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 v15 n10 n10 n10 n10 n10 v10 n0 n0 n0 v0 v0 v0 n0 n0 n0 n0 n0 v0 v0 n0 n0 n0 v0 n10 n10 n10 n10 n10
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 n15 v15 v15 n10 n10 n10 n10 v10 v10 n10 n10 n0 v0 n0 n0 n0 n0 n0 v0 v0 v0 v0 v0 n0 n0 n10 n10 n10 n10 n10 v10 n10 n10
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n15 n10 n10 n10 n10 v10 n10 n10 v10 v0 v0 n0 n0 n0 n0 n0 n0 n0 v0 n10 n10 n10 n10 n10 n10 v10 n10 n15 v15 n15 n15
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n15 n15 n15 n10 n10 v10 v10 n10 n10 n0 v0 n0 n0 n0 n0 n0 n0 n0 v0 n0 n0 n0 n10 n10 n10 n10 n10 n10 v10 n10 n15 v15 n15 n15
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 v15 n15 n15 n15 n10 A10 v10 n10 n10 v10 v0 v0 n0 v0 v0 v0 n0 v0 n0 n0 n0 n10 n10 n10 n10 n10 v10 n10 n15 v15 n15 n15 n15 n15 n15
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n10 n10 n10 v10 n10 n10 v10 v10 v0 n0 n0 n0 v0 v0 v0 v0 v0 v0 n0 n10 n10 n10 n10 n10 v10 n10 n10 n10 n15 n15 n15 n15 n15 n15 n15
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 v15 v15 n15 n15 n15 v10 v10 n10 v10 v10 n10 n10 n0 n0 n0 n0 v0 v0 n0 v0 n0 n0 n10 n10 n10 n10 n10 v10 n15 n15 n15 n15 n15 B15 n15 n15 n15 n15 n15 n15
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n15 n15 n15 n15 v10 n10 v10 v10 n10 n10 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 v0 v10 v10 n10 n10 n10 v10 n15 n15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n15 n15 n15 n15 v10 n10 v10 n10 n0 n0 n0 v0 v0 v0 v0 n0 n0 n0 n0 v0 v0 v10 n10 n10 B10 v10 v15 n15 n15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n10 n10 n10 n10 n10 n10 n10 n0 v0 v0 v0 n0 v0 v0 n0 n0 n0 n10 v10 n10 n10 n10 n10 n10 n10 n15 n15 v15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 v15 v15 n15 n15 A15 n10 n10 v10 n10 v20 n10 n0 n0 n0 v0 n0 n0 n0 v0 n0 n0 n0 n0 v10 n10 n10 n10 n10 n15 v15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 v15 n15 n15 n15 n15 v10 n10 n10 n10 v0 n0 n0 v0 n0 n0 n0 n0 n0 n0 n0 n0 n0 v0 n10 n10 n10 n10 n10 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 n15 n15 n15 n15 n15 n15 n10 v10 v10 n10 n10 n10 n10 n0 n0 n0 v0 n0 n0 n0 n0 v0 n0 n0 v10 v10 v10 n10 n10 v10 v10 n10 n15 n15 n15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+n20 n20 n20 n20 n20 n20 n20 n20 n20 n15 n15 n15 v15 v15 n15 n15 n15 n15 n10 v10 n10 n10 v10 v10 n0 n0 n0 n0 n0 v0 v0 v0 n0 n0 n0 n0 n10 v10 v10 n10 n10 n10 n10 n10 n15 n15 n15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15
+n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n15 n15 n15 n10 n10 n10 n10 n10 v10 v10 n10 n0 n0 n0 n0 v0 v0 v0 n0 n0 n0 n0 n0 v10 v10 n10 n10 v10 n10 n15 n15 n15 n15 v15 v15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n15 n15 n15 n10 v10 v10 n10 n10 v10 v10 v10 n0 n0 v0 n0 n0 n0 n0 v0 n0 n0 n0 n10 n10 n10 n10 v10 v10 n10 n15 n15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n10 n10 n10 n10 n10 v0 n0 n0 n0 n0 n0 n0 n0 n0 n0 v0 n0 n0 v0 n10 n10 n10 v10 n15 n15 n15 n15 v15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 v15 n15 n10 n10 n10 n10 v10 n0 n0 n0 n0 v0 n0 n0 n0 v0 n0 n0 n0 n10 v20 n10 v10 n10 n10 B15 n15 n15 v15 v15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 v15 n15 n15 n10 n10 n10 n10 n10 n10 v10 n10 n0 n0 n0 v0 v0 n0 v0 v0 v0 n0 n10 n10 n10 n10 n10 n10 n10 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n15 n15 v15 v10 A10 n10 n10 v10 v0 v0 n0 n0 n0 n0 v0 v0 v0 v0 n0 n0 n0 n10 v10 n10 v10 n15 n15 n15 n15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n15 n15 n15 n15 n15 n15 n15 n15 n15 v15 n15 n15 v10 n10 n10 n10 v10 v10 v0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n10 n10 v10 v10 n10 v10 n15 n15 n15 n15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n15 n15 n15 n15 n15 n15 A15 n15 n15 n15 n15 n15 v10 n10 n10 n10 n10 n10 n0 n0 v0 n0 v0 v0 n0 n0 n0 n0 n10 n10 v10 v10 n10 v10 v10 n15 n15 n15 v15 v15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n15 n15 n15 n15 n15 n15 n15 n10 n10 n10 v10 n10 n10 n10 n10 n10 n0 v0 v0 v0 v0 v0 v0 n0 n0 n0 v0 v10 v10 n10 n10 v10 n10 n10 n10 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n15 n15 n15 n15 n15 v15 n15 n10 v10 n10 n10 n10 n10 n10 n0 n0 n0 v0 n0 v0 v0 v0 n0 v0 v0 v10 n10 n10 v10 B10 n10 n15 n15 n15 v15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n15 n15 v15 n15 n10 v10 n10 n10 n10 n10 n10 n10 n0 n0 n0 v0 n0 n0 n0 n0 n0 n0 n0 v0 n0 n10 n10 v10 v10 n10 n10 n15 n15 n15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n15 n15 v15 n15 n10 v10 n10 n10 n10 n10 n10 n10 v0 n0 n0 n0 n0 n0 n0 n0 v0 v0 v10 n10 n10 v10 n10 n10 n10 n10 n15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n10 n10 v10 n10 n10 n10 n10 n10 n0 n0 v0 v0 v0 v0 v0 n0 n0 n0 n0 n0 v0 n0 n10 n10 v10 v10 n10 n10 n10 n10 v15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n10 n10 n10 n10 n10 v0 n0 n0 n0 v0 v0 n0 n0 n0 n0 n0 v0 v0 v0 n0 n0 n0 v10 n10 n10 n10 n10 n10 v15 v15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n0 n0 n0 n0 v0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 v0 n0 n10 n10 v10 v10 v10 n10 n10 n10 n10 n10 v15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n0 n0 n0 n0 v0 n0 n0 A0 n0 n0 n0 n0 n0 n0 v0 n10 n10 n10 v10 n10 v10 n10 n10 v10 n10 n10 n10 n10 v15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n0 n0 v0 n0 n0 v0 v0 v0 n0 n0 v0 v0 v0 n0 n0 n10 n10 n10 v10 n10 n10 n10 v10 v10 n15 n15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 b20 n20 n20 n20
+n0 n0 n0 n0 v0 v0 v0 n0 n0 n0 n0 v0 n0 v0 v0 v10 v10 v10 v10 n10 v10 n10 v10 v10 n15 n15 n15 n15 n15 B15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n0 n0 v0 v0 n0 n0 v0 n0 n0 n0 n0 v0 v0 v0 n0 n10 n10 n10 n10 n10 v10 n10 n15 n15 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+n0 n0 v0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n0 n10 n10 n10 n10 n10 n10 n10 n15 n15 n15 n15 n15 n15 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20
+]]>
+    </data>
+</map>

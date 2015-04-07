@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map height="40" width="40">
+    <game seed="231" rounds="2000"/>
+    <symbols>
+        <symbol terrain="NORMAL" type="TERRAIN" character="n"/>
+        <symbol terrain="VOID" type="TERRAIN" character="v"/>
+        <symbol team="A" type="HQ" character="a"/>
+        <symbol team="B" type="HQ" character="b"/>
+        <symbol team="A" type="TOWER" character="A"/>
+        <symbol team="B" type="TOWER" character="B"/>
+    </symbols>
+    <data>
+<![CDATA[
+n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n30 n30 n30 n30 n30 n30 n20 n20 n20 n20 n20 n20 n20 n1 n1
+n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n30 n30 n30 n30 n30 n30 n30 n30 n20 n20 n20 n20 n20 n20 n20
+n50 n50 n50 n50 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v30 v30 n30 n30 n30 n40 n30 n30 n30 n20 n20 n20 n20 n20 n20 n20
+n50 n50 n50 n50 v1 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n40 n40 n40 n40 n30 n30 n30 n30 n20 n20 n20 n20 n20 n20
+n50 n50 n50 n50 v1 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n40 n40 n40 n30 n30 n30 n30 n20 n20 n20 n20 n10 n10
+n50 n50 n50 n50 v1 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n40 n40 n40 n30 n30 n30 n30 n20 n20 n20 n10 n10 n10
+n50 n50 n50 n50 v1 n50 n50 n50 n50 a50 n50 n50 n50 n50 n50 n50 n50 n50 A50 n50 n50 n50 n50 n50 A50 n50 n50 n40 n40 n40 n30 n30 n30 n30 A20 n20 n20 n10 n10 n10
+n50 n50 n50 n50 v1 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n40 n40 n40 n40 n40 n30 n30 n20 n20 n20 n10 n10 n10 n10
+n50 n50 n50 n50 v1 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n40 n40 n40 n40 n40 n30 n30 n20 n20 n20 n10 n10 n10 n1
+n50 n50 n50 n50 v1 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n40 n40 n40 n40 n40 n30 n30 n20 n20 n20 n10 n10 n10 n1
+n50 n50 n50 n50 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v30 v30 v30 n40 n40 n30 n30 n30 n30 n20 n20 n20 n20 n10 n10 n10 n1
+n50 n50 n50 n50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v30 v30 n40 n40 n30 n30 n30 n30 n20 n20 n20 n20 n10 n10 n10 n10
+n50 n50 n50 n50 v50 v50 v50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n30 n30 n30 n30 n30 n30 n30 n30 n20 n20 n20 n20 n10 n10 n10 n10
+n20 n20 n20 n20 v20 v20 v20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n30 n30 n30 n30 n30 n30 n20 n20 n20 n20 n10 n10 n10 n10
+n20 n20 n20 n20 v20 v20 v20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n10 n10 n10 n10
+n20 n20 n20 n20 v20 v20 v20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n10 n10 n10 n10 n10 n10 n1 n1
+n10 n10 n10 n10 v10 v10 v10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n20 n20 n20 n20 n20 n10 n10 n10 n10 n10 n10 n1 n1
+n10 n1 n1 n1 v1 v1 v1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10
+n10 n1 n1 n1 v1 v1 v1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10
+n10 n10 n1 n1 v1 v1 v1 n10 n10 n10 n10 n10 n10 n10 n10 n10 n1 n1 n1 n1 n1 n1 n1 n1 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10
+n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n1 n1 n1 n1 n1 n1 n1 n1 n10 n10 n10 n10 n10 n10 n10 n10 n10 v1 v1 v1 n1 n1 n10 n10
+n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 v1 v1 v1 n1 n1 n1 n10
+n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 n1 v1 v1 v1 n1 n1 n1 n10
+n1 n1 n10 n10 n10 n10 n10 n10 n20 n20 n20 n20 n20 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 n10 v10 v10 v10 n10 n10 n10 n10
+n1 n1 n10 n10 n10 n10 n10 n10 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v20 v20 v20 n20 n20 n20 n20
+n10 n10 n10 n10 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v20 v20 v20 n20 n20 n20 n20
+n10 n10 n10 n10 n20 n20 n20 n20 n30 n30 n30 n30 n30 n30 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 n20 v20 v20 v20 n20 n20 n20 n20
+n10 n10 n10 n10 n20 n20 n20 n20 n30 n30 n30 n30 n30 n30 n30 n30 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 v50 v50 v50 n50 n50 n50 n50
+n10 n10 n10 n10 n20 n20 n20 n20 n30 n30 n30 n30 n40 n40 v30 v30 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 v50 n50 n50 n50 n50
+n1 n10 n10 n10 n20 n20 n20 n20 n30 n30 n30 n30 n40 n40 v30 v30 v30 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 n50 n50 n50 n50
+n1 n10 n10 n10 n20 n20 n20 n30 n30 n40 n40 n40 n40 n40 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 v1 n50 n50 n50 n50
+n1 n10 n10 n10 n20 n20 n20 n30 n30 n40 n40 n40 n40 n40 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 v1 n50 n50 n50 n50
+n10 n10 n10 n10 n20 n20 n20 n30 n30 n40 n40 n40 n40 n40 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 v1 n50 n50 n50 n50
+n10 n10 n10 n20 n20 B20 n30 n30 n30 n30 n40 n40 n40 n50 n50 B50 n50 n50 n50 n50 n50 B50 n50 n50 n50 n50 n50 n50 n50 n50 b50 n50 n50 n50 n50 v1 n50 n50 n50 n50
+n10 n10 n10 n20 n20 n20 n30 n30 n30 n30 n40 n40 n40 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 v1 n50 n50 n50 n50
+n10 n10 n20 n20 n20 n20 n30 n30 n30 n30 n40 n40 n40 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 v1 n50 n50 n50 n50
+n20 n20 n20 n20 n20 n20 n30 n30 n30 n30 n40 n40 n40 n40 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 v1 n50 n50 n50 n50
+n20 n20 n20 n20 n20 n20 n20 n30 n30 n30 n40 n30 n30 n30 v30 v30 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 n50 n50 n50 n50
+n20 n20 n20 n20 n20 n20 n20 n30 n30 n30 n30 n30 n30 n30 n30 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50
+n1 n1 n20 n20 n20 n20 n20 n20 n20 n30 n30 n30 n30 n30 n30 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50 n50
+]]>
+    </data>
+</map>

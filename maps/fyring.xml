@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map height="40" width="60">
+    <game seed="2211" rounds="2000"/>
+    <symbols>
+        <symbol terrain="NORMAL" type="TERRAIN" character="n"/>
+        <symbol terrain="VOID" type="TERRAIN" character="v"/>
+        <symbol team="A" type="HQ" character="a"/>
+        <symbol team="B" type="HQ" character="b"/>
+        <symbol team="A" type="TOWER" character="A"/>
+        <symbol team="B" type="TOWER" character="B"/>
+    </symbols>
+    <data>
+<![CDATA[
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 B1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 a1 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 B1 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 A2 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 B2 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 A2 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 B2 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 v1 n8 n8 n8 n8 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 A1 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 b1 n18 n18 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 A1 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 v1 v1 v1 v1 v1 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8 n8
+]]>
+    </data>
+</map>
