@@ -1,4 +1,4 @@
-package team1;
+package team1.common;
 
 import battlecode.common.Direction;
 import battlecode.common.MapLocation;

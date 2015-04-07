@@ -1,4 +1,4 @@
-package team1;
+package team1.common;
 
 import battlecode.common.GameActionException;
 import battlecode.common.MapLocation;
@@ -30,6 +30,4 @@ public class Broadcasting {
 		int y = rc.readBroadcast(type+1);
 		return new MapLocation(x,y);
 	}
-	
-
 }

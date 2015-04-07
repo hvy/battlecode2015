@@ -1,12 +1,12 @@
-package team1.Robots;
+package team1.robots;
 
 import team1.Action;
 import team1.Robot;
-import team1.SupplyHandler;
-import team1.Util;
 import team1.Parameters;
-import team1.Constants.BroadcastChannel;
-import team1.Constants.StructureConstants;
+import team1.SupplyHandler;
+import team1.common.Util;
+import team1.constants.BroadcastChannel;
+import team1.constants.StructureConstants;
 import battlecode.common.GameActionException;
 import battlecode.common.RobotController;
 import battlecode.common.RobotInfo;
@@ -31,6 +31,7 @@ public class BeaverRobot extends Robot {
 		}
 		
 		if (rc.isCoreReady()) {
+			// Create a Miner Factory if there isn't one already
 			if (needMinerFactory()) {
 				Action.tryBuild(Util.directions[rand.nextInt(8)],RobotType.MINERFACTORY, rc);
 			}
@@ -107,6 +108,6 @@ public class BeaverRobot extends Robot {
 	}
 	
 	private boolean shouldMine() throws GameActionException {
-		return rc.senseOre(location) > Parameters.BEAVER_MINE_THRESHOLD;
+		return rc.senseOre(rc.getLocation()) > Parameters.BEAVER_MINE_THRESHOLD;
 	}
 }

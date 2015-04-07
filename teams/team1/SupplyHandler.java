@@ -1,7 +1,8 @@
 package team1;
 
-import team1.Constants.BroadcastChannel;
-import team1.Robots.HQRobot;
+import team1.common.Util;
+import team1.constants.BroadcastChannel;
+import team1.robots.HQRobot;
 import battlecode.common.*;
 
 public class SupplyHandler  {

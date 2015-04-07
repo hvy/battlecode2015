@@ -1,10 +1,10 @@
-package team1.Robots;
+package team1.robots;
 
 import java.util.Random;
 
 import team1.Action;
 import team1.Robot;
-import team1.Util;
+import team1.common.Util;
 import battlecode.common.RobotController;
 import battlecode.common.RobotInfo;
 import battlecode.common.Team;

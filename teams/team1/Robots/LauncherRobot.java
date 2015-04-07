@@ -1,4 +1,4 @@
-package team1.Robots;
+package team1.robots;
 
 public class LauncherRobot {
 

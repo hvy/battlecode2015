@@ -1,4 +1,4 @@
-package team1.Robots;
+package team1.robots;
 
 
 import java.util.HashMap;
@@ -7,8 +7,8 @@ import team1.Action;
 import team1.Parameters;
 import team1.Robot;
 import team1.SupplyHandler;
-import team1.Util;
-import team1.Constants.BroadcastChannel;
+import team1.common.Util;
+import team1.constants.BroadcastChannel;
 import battlecode.common.GameActionException;
 import battlecode.common.GameConstants;
 import battlecode.common.MapLocation;

@@ -4,17 +4,17 @@ import battlecode.common.*;
 
 import java.util.*;
 
-import team1.Robots.BarracksRobot;
-import team1.Robots.BasherRobot;
-import team1.Robots.BeaverRobot;
-import team1.Robots.HQRobot;
-import team1.Robots.MinerFactoryRobot;
-import team1.Robots.MinerRobot;
-import team1.Robots.SoldierRobot;
-import team1.Robots.SupplyDepotRobot;
-import team1.Robots.TankFactoryRobot;
-import team1.Robots.TankRobot;
-import team1.Robots.TowerRobot;
+import team1.robots.BarracksRobot;
+import team1.robots.BasherRobot;
+import team1.robots.BeaverRobot;
+import team1.robots.HQRobot;
+import team1.robots.MinerFactoryRobot;
+import team1.robots.MinerRobot;
+import team1.robots.SoldierRobot;
+import team1.robots.SupplyDepotRobot;
+import team1.robots.TankFactoryRobot;
+import team1.robots.TankRobot;
+import team1.robots.TowerRobot;
 
 public class RobotPlayer {
 

@@ -2,7 +2,8 @@ package team1;
 
 import java.util.Random;
 
-import team1.Constants.BroadcastChannel;
+import team1.common.Broadcasting;
+import team1.constants.BroadcastChannel;
 import battlecode.common.GameActionException;
 import battlecode.common.MapLocation;
 import battlecode.common.RobotController;

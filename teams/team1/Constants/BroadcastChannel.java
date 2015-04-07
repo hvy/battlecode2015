@@ -1,4 +1,4 @@
-package team1.Constants;
+package team1.constants;
 
 public class BroadcastChannel {
 	public static int NUM_BEAVERS = 0;

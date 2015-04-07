@@ -1,4 +1,4 @@
-package team1.Constants;
+package team1.constants;
 
 /**
  * NAME 		SPAWNED FROM	COST				SUPPLY UPKEEP	HP	ATTACK	RANGE	MD	AD	LD	CD

@@ -1,4 +1,4 @@
-package team1.Constants;
+package team1.constants;
 
 /**
  * NAME					REQ				COST				USE
