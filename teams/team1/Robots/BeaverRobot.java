@@ -31,11 +31,12 @@ public class BeaverRobot extends Robot {
 		}
 		
 		if (rc.isCoreReady()) {
-			// Create a Miner Factory if there isn't one already
-			if (needMinerFactory()) {
-				Action.tryBuild(Util.directions[rand.nextInt(8)],RobotType.MINERFACTORY, rc);
-			}
+			tryToBuildStructure(); 
 			
+			
+			/*if (needMinerFactory()) {
+				Action.tryBuild(Util.directions[rand.nextInt(8)],RobotType.MINERFACTORY, rc);
+			}*/
 			
 			/*
 			else if (needBarrack()) {
@@ -55,6 +56,13 @@ public class BeaverRobot extends Robot {
 			*/
 		}
 		
+	}
+
+	private void tryToBuildStructure() throws GameActionException {
+		RobotType structureType = broadcast.readPreferredStructure();
+		if (structureType != null) {
+			Action.tryBuild(Util.directions[rand.nextInt(8)], structureType, rc);	
+		}
 	}
 
 	@Override

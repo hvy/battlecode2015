@@ -33,13 +33,17 @@ public class HQRobot extends Robot {
 	int numUnits;
 	int numSupplyDepots;
 	
-	
 	public static double totalSupplyGenerated;
 		
-	
 	public HQRobot(RobotController rc) {
 		super(rc);
+		init();
 		army = new HashMap<Integer, RobotInfo>();
+	}
+	
+	private void init() {
+		// Set the first structure to build
+		broadcast.setPreferredStructure(RobotType.MINERFACTORY);
 	}
 	
 	@Override
@@ -59,7 +63,6 @@ public class HQRobot extends Robot {
 			initialCheckpoint = armyCheckPoint;
 		}
 		
-		
 		// if army consists of 10 or more units, start advancing
 		RobotInfo[] nearby = rc.senseNearbyRobots(armyCheckPoint, 30, myTeam);
 		
@@ -76,7 +79,6 @@ public class HQRobot extends Robot {
 			armyCheckPoint = new MapLocation(x_m, y_m);
 		} else if (armyCount < 5)
 			armyCheckPoint = initialCheckpoint;
-		
 	}
 	
 	@Override
@@ -93,7 +95,6 @@ public class HQRobot extends Robot {
 		numTankfactories = 0;
 		numUnits = 0;
 		numSupplyDepots = 0;
-		
 		
 		currentSupplyCount = 0f;
 		armyCount = 0;

@@ -22,9 +22,6 @@ public class RobotPlayer {
 	
 	public static void run(RobotController rc) {
 		//rand = new Random(rc.getID());
-
-		
-		
 		Direction lastDirection = null;
 		
 		setRobot(rc);
@@ -38,9 +35,8 @@ public class RobotPlayer {
 				e.printStackTrace();
 			}
 
-			
 			try {
-				robot.update(); // Update robot data
+				robot.update(); // Update robot data TODO Remove update() and do it inside run()
 				robot.run(); // Execute AI
 			} catch (Exception e) { 
 				System.out.println( robot.name() + " Exception");
@@ -95,7 +91,5 @@ public class RobotPlayer {
 		if (rc.getType() == RobotType.TANKFACTORY) {
 			robot = new TankFactoryRobot(rc);
 		}
-	}
-
-	
+	}	
 }

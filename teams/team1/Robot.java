@@ -29,7 +29,6 @@ public abstract class Robot {
 	
 	protected Broadcasting broadcast;
 	
-	
 	public Robot(RobotController rc) {
 		this.rc = rc;
 		rand = new Random(rc.getID());
@@ -84,5 +83,4 @@ public abstract class Robot {
 
         return false;
     }
-
 }

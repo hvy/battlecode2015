@@ -1,8 +1,10 @@
 package team1.common;
 
+import team1.constants.BroadcastChannel;
 import battlecode.common.GameActionException;
 import battlecode.common.MapLocation;
 import battlecode.common.RobotController;
+import battlecode.common.RobotType;
 
 public class Broadcasting {
 	
@@ -29,5 +31,25 @@ public class Broadcasting {
 		int x = rc.readBroadcast(type);
 		int y = rc.readBroadcast(type+1);
 		return new MapLocation(x,y);
+	}
+	
+	public boolean setPreferredStructure(RobotType structureType) {
+		try {
+			rc.broadcast(BroadcastChannel.PREFERRED_STRUCTURE, structureType.ordinal());
+		} catch (GameActionException e) {
+			return false;
+		}
+		return true;
+	}
+	
+	public RobotType readPreferredStructure() {
+		RobotType structureType = null;
+		try {
+			int robotTypeOrdinal = rc.readBroadcast(BroadcastChannel.PREFERRED_STRUCTURE);
+			structureType = RobotType.values()[robotTypeOrdinal];
+		} catch (GameActionException e) {
+			return null;
+		}
+		return structureType;
 	}
 }
