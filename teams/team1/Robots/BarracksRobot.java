@@ -6,6 +6,7 @@ import team1.Action;
 import team1.Parameters;
 import team1.Robot;
 import team1.Util;
+import team1.Constants.BroadcastChannel;
 import battlecode.common.MapLocation;
 import battlecode.common.RobotController;
 import battlecode.common.RobotInfo;
@@ -24,10 +25,10 @@ public class BarracksRobot extends Robot {
 
 		// get information broadcasted by the HQ
 		//int numBeavers = rc.readBroadcast(Parameters.BROAD_NUM_BEAVERS);
-		int numSoldiers = rc.readBroadcast(Parameters.BROAD_NUM_SOLDIERS);
-		int numBashers = rc.readBroadcast(Parameters.BROAD_NUM_BASHERS);
-		int numMinFact = rc.readBroadcast(Parameters.BROAD_NUM_MIN_FACT);
-		int numTankFact = rc.readBroadcast(Parameters.BROAD_NUM_TANK_FACT);
+		int numSoldiers = rc.readBroadcast(BroadcastChannel.NUM_SOLDIERS);
+		int numBashers = rc.readBroadcast(BroadcastChannel.NUM_BASHERS);
+		int numMinFact = rc.readBroadcast(BroadcastChannel.NUM_MINER_FACTORIES);
+		int numTankFact = rc.readBroadcast(BroadcastChannel.NUM_TANK_FACTORIES);
 
 		if (rc.isCoreReady() && rc.getTeamOre() >= 60 && Parameters.MAX_BARRACK_UNITS > numSoldiers + numBashers) {
 			

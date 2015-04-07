@@ -8,6 +8,7 @@ import team1.Parameters;
 import team1.Robot;
 import team1.SupplyHandler;
 import team1.Util;
+import team1.Constants.BroadcastChannel;
 import battlecode.common.GameActionException;
 import battlecode.common.GameConstants;
 import battlecode.common.MapLocation;
@@ -123,17 +124,17 @@ public class HQRobot extends Robot {
 				armyCount++;
 		}
 		
-		broadcast.sendInt(Parameters.BROAD_NUM_BEAVERS, numBeavers);
-		broadcast.sendInt(Parameters.BROAD_NUM_SOLDIERS, numSoldiers);
-		broadcast.sendInt(Parameters.BROAD_NUM_BASHERS, numBashers);
-		broadcast.sendInt(Parameters.BROAD_NUM_MINERS, numMiners);
-		broadcast.sendInt(Parameters.BROAD_NUM_BARRACKS, numBarracks);
-		broadcast.sendInt(Parameters.BROAD_NUM_MIN_FACT, numMinerFactories);
-		broadcast.sendInt(Parameters.BROAD_NUM_TANK_FACT, numTankfactories);
-		broadcast.sendInt(Parameters.BROAD_NUM_SUPPLY_DEPOTS, numSupplyDepots);
-		broadcast.sendInt(Parameters.BROAD_NUM_UNITS, numUnits);
-		broadcast.sendInt(Parameters.BROAD_SUPPLY, (int) currentSupplyCount);
-		broadcast.sendLocation(Parameters.BROAD_CHECKPOINT, armyCheckPoint);
+		broadcast.sendInt(BroadcastChannel.NUM_BEAVERS, numBeavers);
+		broadcast.sendInt(BroadcastChannel.NUM_SOLDIERS, numSoldiers);
+		broadcast.sendInt(BroadcastChannel.NUM_BASHERS, numBashers);
+		broadcast.sendInt(BroadcastChannel.NUM_MINERS, numMiners);
+		broadcast.sendInt(BroadcastChannel.NUM_BARRACKS, numBarracks);
+		broadcast.sendInt(BroadcastChannel.NUM_MINER_FACTORIES, numMinerFactories);
+		broadcast.sendInt(BroadcastChannel.NUM_TANK_FACTORIES, numTankfactories);
+		broadcast.sendInt(BroadcastChannel.NUM_SUPPLY_DEPOTS, numSupplyDepots);
+		broadcast.sendInt(BroadcastChannel.NUM_UNITS, numUnits);
+		broadcast.sendInt(BroadcastChannel.SUPPLY, (int) currentSupplyCount);
+		broadcast.sendLocation(BroadcastChannel.CHECKPOINT, armyCheckPoint);
 		//broadcast.sendInt(Parameters.BROAD_CHECKPOINT_Y, armyCheckPoint.y);
 		
 		// give supply

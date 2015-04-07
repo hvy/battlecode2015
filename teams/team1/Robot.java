@@ -2,6 +2,7 @@ package team1;
 
 import java.util.Random;
 
+import team1.Constants.BroadcastChannel;
 import battlecode.common.GameActionException;
 import battlecode.common.MapLocation;
 import battlecode.common.RobotController;
@@ -48,10 +49,8 @@ public abstract class Robot {
 	public abstract String name();
 	
 	protected MapLocation getCheckpoint() throws GameActionException {
-		
-		return broadcast.readLocation(Parameters.BROAD_CHECKPOINT);
+		return broadcast.readLocation(BroadcastChannel.CHECKPOINT);
 	}
-	
 	
 	protected boolean inEnemyTowerOrHQRange(MapLocation loc, MapLocation[] enemyTowers) {
         if (loc.distanceSquaredTo(enemyHome) <= 52) {

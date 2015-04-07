@@ -1,5 +1,6 @@
 package team1;
 
+import team1.Constants.BroadcastChannel;
 import team1.Robots.HQRobot;
 import battlecode.common.*;
 
@@ -76,12 +77,10 @@ public class SupplyHandler  {
 
         // Debug.indicate("supply", 0, " supplyUpkeepNearby = " + totalSupplyUpkeepNearby + "; supplyNearby = " + totalSupplyNearby);
         // Debug.indicate("supply", 1, "supply requestSize: " + supplyRequestSize + "; turns unfulfilled = " + numTurnsSupplyRequestUnfulfilled);
-
-       
         
-        if (supplyRequestSize > robot.broadcast.readInt(Parameters.BROAD_SUPPLY_MAX_NEEDED)) {
-        	robot.broadcast.sendInt(Parameters.BROAD_SUPPLY_MAX_NEEDED, supplyRequestSize);
-        	robot.broadcast.sendLocation(Parameters.BROAD_MOST_NEEDED_SUPPLY_LOCATION, robot.location);
+        if (supplyRequestSize > robot.broadcast.readInt(BroadcastChannel.SUPPLY_MAX_NEEDED)) {
+        	robot.broadcast.sendInt(BroadcastChannel.SUPPLY_MAX_NEEDED, supplyRequestSize);
+        	robot.broadcast.sendLocation(BroadcastChannel.MOST_NEEDED_SUPPLY_LOCATION, robot.location);
             //MessageBoard.NEEDIEST_SUPPLY_LOC.writeMapLocation(location);
         }
     }
@@ -108,9 +107,9 @@ public class SupplyHandler  {
         // read supply needs
         if (Clock.getRoundNum() % 3 == 1) {
         	
-            supplyRunnerNeed = robot.broadcast.readInt(Parameters.BROAD_SUPPLY_MAX_NEEDED);
+            supplyRunnerNeed = robot.broadcast.readInt(BroadcastChannel.SUPPLY_MAX_NEEDED);
             if (supplyRunnerNeed > 0) {
-            	supplyRunnerDest = robot.broadcast.readLocation(Parameters.BROAD_MOST_NEEDED_SUPPLY_LOCATION);
+            	supplyRunnerDest = robot.broadcast.readLocation(BroadcastChannel.MOST_NEEDED_SUPPLY_LOCATION);
                 // Debug.indicate("supply", 0, "max supply needed = " + supplyRunnerNeed + " at " + supplyRunnerDest.toString());
             } else {
                 supplyRunnerDest = null;
@@ -120,7 +119,7 @@ public class SupplyHandler  {
 
         // reset supply need comms channels
         if (Clock.getRoundNum() % 3 == 2) {
-        	robot.broadcast.sendInt(Parameters.BROAD_SUPPLY_MAX_NEEDED, 0);
+        	robot.broadcast.sendInt(BroadcastChannel.SUPPLY_MAX_NEEDED, 0);
         }
 
         if (supplyRunnerDest != null && robot.location.distanceSquaredTo(supplyRunnerDest) < 35) {

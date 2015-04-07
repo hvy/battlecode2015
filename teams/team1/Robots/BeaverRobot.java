@@ -5,6 +5,7 @@ import team1.Robot;
 import team1.SupplyHandler;
 import team1.Util;
 import team1.Parameters;
+import team1.Constants.BroadcastChannel;
 import team1.Constants.StructureConstants;
 import battlecode.common.GameActionException;
 import battlecode.common.RobotController;
@@ -19,15 +20,24 @@ public class BeaverRobot extends Robot {
 	}
 	
 	@Override
+	public void update() {
+		
+	}
+	
+	@Override
 	public void run() throws Exception {
 		if (rc.isWeaponReady()) {
 			Action.attackSomething(myRange, enemyTeam, rc);
 		}
 		
 		if (rc.isCoreReady()) {
-			if (needBarrack()) {
-				Action.tryBuild(Util.directions[rand.nextInt(8)],RobotType.BARRACKS, rc);
-			} else if (needMinerFactory()) {
+			if (needMinerFactory()) {
+				Action.tryBuild(Util.directions[rand.nextInt(8)],RobotType.MINERFACTORY, rc);
+			}
+			
+			
+			/*
+			else if (needBarrack()) {
 				Action.tryBuild(Util.directions[rand.nextInt(8)],RobotType.MINERFACTORY, rc);
 			} else if (needTankFactory()) {
 				Action.tryBuild(Util.directions[rand.nextInt(8)],RobotType.TANKFACTORY, rc);
@@ -41,6 +51,7 @@ public class BeaverRobot extends Robot {
 			} else {
 				Action.tryMove(rc.senseHQLocation().directionTo(rc.getLocation()), rc);
 			}
+			*/
 		}
 		
 	}
@@ -50,7 +61,14 @@ public class BeaverRobot extends Robot {
 		return "Beaver";
 	}
 	
+	private boolean needMinerFactory() throws GameActionException {
+		return rc.getTeamOre() >= StructureConstants.MINER_FACTORY_ORE_COST && 
+				broadcast.readInt(BroadcastChannel.NUM_MINER_FACTORIES) < Parameters.MAX_MINER_FACTORIES;
+	}
+	
+	
 	private boolean needBarrack() throws GameActionException {
+		/*
 		int numBarracks =  rc.readBroadcast(Parameters.BROAD_NUM_BARRACKS);
 		int numMinerFactories = rc.readBroadcast(Parameters.BROAD_NUM_MIN_FACT);
 		
@@ -58,24 +76,25 @@ public class BeaverRobot extends Robot {
                 rc.getTeamOre() >= StructureConstants.BARRACKS_ORE_COST &&
                 numMinerFactories != 0 &&
 				Parameters.MAX_BARRACKS > numBarracks;
-	}
-	
-	private boolean needMinerFactory() throws GameActionException {
-		int numMinerFactories = rc.readBroadcast(Parameters.BROAD_NUM_MIN_FACT);
-		
-		return rc.getTeamOre() >= 500 && 
-				numMinerFactories < Parameters.MAX_MINER_FACTORIES;
+				*/
+		return false;
 	}
 	
 	private boolean needTankFactory() throws GameActionException {
+		/*
 		int numTankFactories = rc.readBroadcast(Parameters.BROAD_NUM_TANK_FACT);
 		int numBarracks =  rc.readBroadcast(Parameters.BROAD_NUM_BARRACKS);
 		
 		return rc.getTeamOre() >= 500 && 
 				numTankFactories < Parameters.MAX_TANK_FACTORIES;
+		*/
+		
+		return false;
 	}
 	
 	private boolean needSupplyDepot() throws GameActionException {
+		
+		/*
 		int numMinerFactories = rc.readBroadcast(Parameters.BROAD_NUM_MIN_FACT);
 		int supply = rc.readBroadcast(Parameters.BROAD_SUPPLY);
 		int depots = rc.readBroadcast(Parameters.BROAD_NUM_SUPPLY_DEPOTS);
@@ -83,16 +102,11 @@ public class BeaverRobot extends Robot {
 		return rc.getTeamOre() >= 100 && 
 				supply < 100*(2+Math.pow(depots, 0.6)) &&  
 				numMinerFactories != 0;
+				*/
+		return false;
 	}
 	
 	private boolean shouldMine() throws GameActionException {
 		return rc.senseOre(location) > Parameters.BEAVER_MINE_THRESHOLD;
 	}
-
-	@Override
-	public void update() {
-		// TODO Auto-generated method stub
-		
-	}
-	
 }
