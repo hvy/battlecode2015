@@ -2,6 +2,7 @@ package team1.common;
 
 import team1.constants.BroadcastChannel;
 import battlecode.common.GameActionException;
+import battlecode.common.GameConstants;
 import battlecode.common.MapLocation;
 import battlecode.common.RobotController;
 import battlecode.common.RobotType;
@@ -52,4 +53,15 @@ public class Broadcasting {
 		}
 		return structureType;
 	}
+	
+	 public int channelFromLocation(MapLocation loc) {
+	 	int x = loc.x;
+	 	int y = loc.y;
+        x %= GameConstants.MAP_MAX_WIDTH;
+        if (x < 0) x += GameConstants.MAP_MAX_WIDTH;
+        y %= GameConstants.MAP_MAX_HEIGHT;
+        if (y < 0) y += GameConstants.MAP_MAX_HEIGHT;
+        return BroadcastChannel.MISSILE_BASE + y * GameConstants.MAP_MAX_WIDTH + x;
+    }
+	 
 }

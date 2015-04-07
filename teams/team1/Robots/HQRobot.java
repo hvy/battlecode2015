@@ -3,13 +3,12 @@ package team1.robots;
 
 import java.util.HashMap;
 
-import team1.Action;
-import team1.Parameters;
-import team1.Robot;
-import team1.SupplyHandler;
+import team1.common.Action;
+import team1.common.Parameters;
+import team1.common.Robot;
+import team1.common.SupplyHandler;
 import team1.common.Util;
 import team1.constants.BroadcastChannel;
-import battlecode.common.GameActionException;
 import battlecode.common.GameConstants;
 import battlecode.common.MapLocation;
 import battlecode.common.RobotController;
@@ -22,6 +21,7 @@ public class HQRobot extends Robot {
 	MapLocation armyCheckPoint;
 	MapLocation initialCheckpoint;
 	HashMap<Integer, RobotInfo> army;
+	
 	int armyCount;
 	int numSoldiers;
 	int numBashers;

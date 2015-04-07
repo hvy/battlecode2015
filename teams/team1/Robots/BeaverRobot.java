@@ -1,17 +1,14 @@
 package team1.robots;
 
-import team1.Action;
-import team1.Robot;
-import team1.Parameters;
-import team1.SupplyHandler;
+import team1.common.Action;
+import team1.common.Parameters;
+import team1.common.Robot;
 import team1.common.Util;
 import team1.constants.BroadcastChannel;
 import team1.constants.StructureConstants;
 import battlecode.common.GameActionException;
 import battlecode.common.RobotController;
-import battlecode.common.RobotInfo;
 import battlecode.common.RobotType;
-import battlecode.common.Team;
 
 public class BeaverRobot extends Robot {
 	

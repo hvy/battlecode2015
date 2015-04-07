@@ -1,8 +1,7 @@
-package team1;
+package team1.common;
 
 import java.util.Random;
 
-import team1.common.Broadcasting;
 import team1.constants.BroadcastChannel;
 import battlecode.common.GameActionException;
 import battlecode.common.MapLocation;

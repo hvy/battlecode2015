@@ -1,10 +1,9 @@
-package team1;
+package team1.common;
 
 import battlecode.common.*;
 
 import java.util.*;
 
-import team1.common.Robot;
 import team1.robots.BarracksRobot;
 import team1.robots.BasherRobot;
 import team1.robots.BeaverRobot;

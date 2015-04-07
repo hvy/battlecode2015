@@ -1,19 +1,13 @@
 package team1.robots;
 
-import java.util.Random;
 
-import team1.Action;
-import team1.Parameters;
-import team1.Robot;
-import team1.SupplyHandler;
-import team1.common.Util;
+import team1.common.Action;
+import team1.common.Robot;
+import team1.common.SupplyHandler;
 import battlecode.common.Direction;
 import battlecode.common.GameActionException;
 import battlecode.common.MapLocation;
 import battlecode.common.RobotController;
-import battlecode.common.RobotInfo;
-import battlecode.common.RobotType;
-import battlecode.common.Team;
 
 public class MinerRobot extends Robot {
 	

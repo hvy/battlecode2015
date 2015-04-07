@@ -1,4 +1,4 @@
-package team1;
+package team1.common;
 
 public class Parameters {
 	// TODO constants to use for certain thresholds etc.

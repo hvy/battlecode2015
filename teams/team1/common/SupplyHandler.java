@@ -1,6 +1,5 @@
-package team1;
+package team1.common;
 
-import team1.common.Util;
 import team1.constants.BroadcastChannel;
 import team1.robots.HQRobot;
 import battlecode.common.*;

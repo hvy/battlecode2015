@@ -1,6 +1,5 @@
-package team1;
+package team1.common;
 
-import team1.common.Util;
 import battlecode.common.Direction;
 import battlecode.common.GameActionException;
 import battlecode.common.RobotController;
