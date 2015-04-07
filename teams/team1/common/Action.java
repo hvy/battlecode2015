@@ -12,8 +12,18 @@ public class Action {
 	// This method will attack an enemy in sight, if there is one
 	public static void attackSomething(int myRange, Team enemyTeam, RobotController rc) throws GameActionException {
 		RobotInfo[] enemies = rc.senseNearbyRobots(myRange, enemyTeam);
+		
+		int index = 0;
+		double lowestHealth = Double.MAX_VALUE;
+		for (int i = 0; i < enemies.length; i++) {
+			if (enemies[i].health < lowestHealth) {
+				lowestHealth = enemies[i].health;
+						index = i;
+			}
+		}
+		
 		if (enemies.length > 0) {
-			rc.attackLocation(enemies[0].location);
+			rc.attackLocation(enemies[index].location);
 		}
 	}
 	

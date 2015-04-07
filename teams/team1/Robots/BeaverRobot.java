@@ -28,16 +28,13 @@ public class BeaverRobot extends Robot {
 		}
 		
 		if (rc.isCoreReady()) {
-			tryToBuildStructure(); 
+//			tryToBuildStructure(); 
 			
 			
-			/*if (needMinerFactory()) {
+			if (needMinerFactory()) {
 				Action.tryBuild(Util.directions[rand.nextInt(8)],RobotType.MINERFACTORY, rc);
-			}*/
-			
-			/*
-			else if (needBarrack()) {
-				Action.tryBuild(Util.directions[rand.nextInt(8)],RobotType.MINERFACTORY, rc);
+			} else if (needBarrack()) {
+				Action.tryBuild(Util.directions[rand.nextInt(8)],RobotType.BARRACKS, rc);
 			} else if (needTankFactory()) {
 				Action.tryBuild(Util.directions[rand.nextInt(8)],RobotType.TANKFACTORY, rc);
 			} else if (needSupplyDepot()) {
@@ -45,12 +42,11 @@ public class BeaverRobot extends Robot {
 			} else if (shouldMine()) {
 				rc.mine();
 				coreReady = false;
-			//} else if (fate < 900) {
-			//	Action.tryMove(Util.directions[rand.nextInt(8)], rc);
 			} else {
 				Action.tryMove(rc.senseHQLocation().directionTo(rc.getLocation()), rc);
 			}
-			*/
+			
+			
 		}
 		
 	}
@@ -74,42 +70,43 @@ public class BeaverRobot extends Robot {
 	
 	
 	private boolean needBarrack() throws GameActionException {
-		/*
-		int numBarracks =  rc.readBroadcast(Parameters.BROAD_NUM_BARRACKS);
-		int numMinerFactories = rc.readBroadcast(Parameters.BROAD_NUM_MIN_FACT);
+		
+		int numBarracks =  broadcast.readInt(BroadcastChannel.NUM_BARRACKS);
+		int numMinerFactories = broadcast.readInt(BroadcastChannel.NUM_MINER_FACTORIES);
 		
 		return numBarracks == 0 &&
                 rc.getTeamOre() >= StructureConstants.BARRACKS_ORE_COST &&
                 numMinerFactories != 0 &&
 				Parameters.MAX_BARRACKS > numBarracks;
-				*/
-		return false;
+				
+//		return false;
 	}
 	
 	private boolean needTankFactory() throws GameActionException {
-		/*
-		int numTankFactories = rc.readBroadcast(Parameters.BROAD_NUM_TANK_FACT);
-		int numBarracks =  rc.readBroadcast(Parameters.BROAD_NUM_BARRACKS);
+		
+//		int numBarracks =  broadcast.readInt(BroadcastChannel.NUM_BARRACKS);
+		int numTankFactories = broadcast.readInt(BroadcastChannel.NUM_TANK_FACTORIES);
 		
 		return rc.getTeamOre() >= 500 && 
 				numTankFactories < Parameters.MAX_TANK_FACTORIES;
-		*/
 		
-		return false;
+		
+//		return false;
 	}
 	
 	private boolean needSupplyDepot() throws GameActionException {
 		
-		/*
-		int numMinerFactories = rc.readBroadcast(Parameters.BROAD_NUM_MIN_FACT);
-		int supply = rc.readBroadcast(Parameters.BROAD_SUPPLY);
-		int depots = rc.readBroadcast(Parameters.BROAD_NUM_SUPPLY_DEPOTS);
+		int fate = rand.nextInt(1000);
 		
-		return rc.getTeamOre() >= 100 && 
-				supply < 100*(2+Math.pow(depots, 0.6)) &&  
-				numMinerFactories != 0;
-				*/
-		return false;
+		int numMinerFactories = broadcast.readInt(BroadcastChannel.NUM_MINER_FACTORIES);
+		int numBarracks =  broadcast.readInt(BroadcastChannel.NUM_BARRACKS);
+		int supply = broadcast.readInt(BroadcastChannel.SUPPLY);
+		int depots = broadcast.readInt(BroadcastChannel.NUM_SUPPLY_DEPOTS);
+		
+		return rc.getTeamOre() >= 100 && fate > 970 &&  
+				numMinerFactories != 0 && numBarracks != 0;
+				
+//		return false;
 	}
 	
 	private boolean shouldMine() throws GameActionException {

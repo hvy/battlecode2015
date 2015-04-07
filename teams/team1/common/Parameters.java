@@ -9,5 +9,5 @@ public class Parameters {
 	public static int MAX_MINER_FACTORIES = 1;
 	public static int MAX_MINERS = 15;
 	public static int MAX_TANK_FACTORIES = 2;
-	public static int MAX_BARRACK_UNITS = 4;
+	public static int MAX_BARRACK_UNITS = 8;
 }

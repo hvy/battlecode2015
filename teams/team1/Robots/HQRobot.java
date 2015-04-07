@@ -54,13 +54,44 @@ public class HQRobot extends Robot {
 	}
 	
 	private void setArmyCheckPoint() {
+		MapLocation[]  enemyTowers = rc.senseEnemyTowerLocations();
+		
 		if (armyCheckPoint == null) {
 			MapLocation[]  towers = rc.senseTowerLocations();
+			
+			double closest = Double.MAX_VALUE;
+			int idx = 0;
+			for (int i = 0; i < towers.length; i++) {
+				for (int j = 0; j < enemyTowers.length; j++) {
+					if (enemyTowers[j].distanceSquaredTo(towers[i]) < closest) {
+						closest = enemyTowers[j].distanceSquaredTo(towers[i]);
+						idx = i;
+					}
+				}
+				
+			}
+			
 			if (towers.length > 1)
-				armyCheckPoint = towers[0];
+				armyCheckPoint = towers[idx];
 			else
 				armyCheckPoint = home;
 			initialCheckpoint = armyCheckPoint;
+		}
+		
+		// choose closest tower
+		int towerIndex = 0;
+		double closestToHome = Double.MAX_VALUE;
+		double closestDistance = Double.MAX_VALUE;
+		for (int i = 0; i < enemyTowers.length; i++) {
+			if (armyCheckPoint.distanceSquaredTo(enemyTowers[i]) < closestDistance) {
+				towerIndex = i;
+				closestDistance = armyCheckPoint.distanceSquaredTo(enemyTowers[i]);
+			}
+			
+			if (home.distanceSquaredTo(enemyTowers[i]) < closestToHome) {
+				closestToHome = home.distanceSquaredTo(enemyTowers[i]);
+			}
+			
 		}
 		
 		// if army consists of 10 or more units, start advancing
@@ -73,11 +104,11 @@ public class HQRobot extends Robot {
 				army.put(nearby[i].ID, nearby[i]);
 			}
 			
-			int x_m = armyCheckPoint.x + (rc.senseEnemyTowerLocations()[0].x - armyCheckPoint.x)/2;
-			int y_m = armyCheckPoint.y - (armyCheckPoint.y - rc.senseEnemyTowerLocations()[0].y)/2;
+			int x_m = armyCheckPoint.x + (rc.senseEnemyTowerLocations()[towerIndex].x - armyCheckPoint.x)/2;
+			int y_m = armyCheckPoint.y - (armyCheckPoint.y - rc.senseEnemyTowerLocations()[towerIndex].y)/2;
 			
 			armyCheckPoint = new MapLocation(x_m, y_m);
-		} else if (armyCount < 5)
+		} else if (armyCount < 6)
 			armyCheckPoint = initialCheckpoint;
 	}
 	

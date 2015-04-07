@@ -33,7 +33,7 @@ public class TankRobot extends Robot {
 	     
 		if (rc.isCoreReady()) {
 			int fate = rand.nextInt(1000);
-			if (fate < 30) {
+			if (fate < 1) {
 				Action.tryMove(Util.directions[rand.nextInt(8)], rc);
 			} else {
 				
