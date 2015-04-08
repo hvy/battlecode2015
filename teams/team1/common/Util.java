@@ -1,11 +1,14 @@
 package team1.common;
 
+import java.util.Random;
+
 import battlecode.common.Direction;
 import battlecode.common.MapLocation;
 import battlecode.common.RobotInfo;
 
 public class Util {
 	
+	public static Random rnd = new Random();
 	public static Direction[] directions = {Direction.NORTH, Direction.NORTH_EAST, Direction.EAST, Direction.SOUTH_EAST, Direction.SOUTH, Direction.SOUTH_WEST, Direction.WEST, Direction.NORTH_WEST};
 
 	public static int directionToInt(Direction d) {
@@ -51,6 +54,10 @@ public class Util {
 
 	public static float distance(float x, float y) {
 		return Math.max(Math.abs(x), Math.abs(y));
+	}
+	
+	public static Direction rndDirection() {
+		return directions[rnd.nextInt(8)];
 	}
 	
 }
