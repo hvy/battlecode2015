@@ -12,6 +12,7 @@ import battlecode.common.RobotController;
 public class MinerRobot extends Robot {
 	
 	private MapLocation mineLoc;
+	private boolean gettingSupplies = false;
 	
 	public MinerRobot(RobotController rc) {
 		super(rc);
@@ -30,10 +31,12 @@ public class MinerRobot extends Robot {
 			Action.attackSomething(myRange, enemyTeam, rc);
 		}
 		
-		 SupplyHandler.shareSupply(this);
-	     SupplyHandler.requestResupplyIfNecessary(this);
+		goGetSupplies();
 		
-		if (rc.isCoreReady()) {			
+		SupplyHandler.shareSupply(this);
+	    SupplyHandler.requestResupplyIfNecessary(this);
+		
+		if (rc.isCoreReady() && !gettingSupplies) {			
 			doMining();
 			coreReady = false;
 		}
@@ -149,6 +152,22 @@ public class MinerRobot extends Robot {
 	        if (!isSafeToMine(loc)) return false;
 
 	        return true;
+	 }
+	 
+	 private void goGetSupplies() throws GameActionException {
+		 
+		 if (needSupplies()) {
+			 if (rc.isCoreReady())
+				 Action.tryMove(location.directionTo(home), rc);
+			 gettingSupplies = true;
+		 } else {
+			 gettingSupplies = false;
+		 }
+		 
+	 }
+	 
+	 private boolean needSupplies() {
+		 return rc.getSupplyLevel() < 5;
 	 }
 	 
 	 private  boolean locIsOccupied(MapLocation loc) {

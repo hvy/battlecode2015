@@ -97,7 +97,7 @@ public class HQRobot extends Robot {
 		// if army consists of 10 or more units, start advancing
 		RobotInfo[] nearby = rc.senseNearbyRobots(armyCheckPoint, 30, myTeam);
 		
-		if (nearby.length >= 20) {
+		if (nearby.length >= 15) {
 			
 			army.clear();
 			for (int i = 0; i < nearby.length; i++) {
