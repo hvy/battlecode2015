@@ -44,7 +44,6 @@ public class BeaverRobot extends Robot {
 		if (location.isAdjacentTo(buildLocation)) {
 			boolean successfullyBuilt = tryToBuildAtBuildLocation();
 			if (!successfullyBuilt && buildLocation != null && rc.isCoreReady()) {
-				System.err.println("MINING!");
 				rc.mine();
 			}
 		} else {
@@ -105,7 +104,6 @@ public class BeaverRobot extends Robot {
 				MapLocation candidate = location.add(direction, radius);
 				
 				if (mayBuildAt(candidate)) {
-					//System.err.println("Found valid build coordinate! " + candidate);
 					buildLocation = candidate;
 					return;
 				}
@@ -144,7 +142,6 @@ public class BeaverRobot extends Robot {
 		
 		Direction buildDirection = location.directionTo(buildLocation);
 		if (rc.canBuild(buildDirection, structureType)) {
-			System.err.println("fkdjkfdsj;fjsdakfjaskfjsakfsdafjs;");
 			rc.build(buildDirection, structureType);
 			buildLocation = null;
 			return true;
