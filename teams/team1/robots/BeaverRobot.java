@@ -77,6 +77,16 @@ public class BeaverRobot extends Robot {
 			return false;
 		}
 		
+		// Make sure no allies are in the way
+		RobotInfo[] allies = rc.senseNearbyRobots(location, 1, myTeam);
+		for (RobotInfo ally : allies) {
+			if (ally.type.isBuilding) {
+				return false;
+			} else if (ally.location.equals(location)) {
+				return false;
+			}
+		}
+		
 		// Make sure no enemies are nearby
 		RobotInfo[] enemies = rc.senseNearbyRobots(location, 15, enemyTeam);
 		for (RobotInfo enemy : enemies) {
