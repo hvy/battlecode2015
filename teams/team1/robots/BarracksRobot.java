@@ -41,8 +41,6 @@ public class BarracksRobot extends Robot {
 				Action.trySpawn(Util.directions[rand.nextInt(8)],RobotType.SOLDIER, rc);
 			}
 		}
-		
-		
 	}
 
 	@Override
@@ -52,8 +50,6 @@ public class BarracksRobot extends Robot {
 
 	@Override
 	public void update() {
-		// TODO Auto-generated method stub
-		
-	}
 
+	}
 }

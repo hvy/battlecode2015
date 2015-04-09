@@ -17,6 +17,7 @@ public class BroadcastChannel {
 	public static int NUM_MINER_FACTORIES 			= 101;
 	public static int NUM_TANK_FACTORIES 			= 102;
 	public static int NUM_SUPPLY_DEPOTS 			= 103;
+	public static int NUM_HELIPADS 					= 200;
 	
 	// Channels used to broadcast the preferred structure to build
 	public static int PREFERRED_STRUCTURE 			= 600;

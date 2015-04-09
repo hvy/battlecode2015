@@ -8,6 +8,7 @@ import team1.robots.BarracksRobot;
 import team1.robots.BasherRobot;
 import team1.robots.BeaverRobot;
 import team1.robots.HQRobot;
+import team1.robots.HelipadRobot;
 import team1.robots.MinerFactoryRobot;
 import team1.robots.MinerRobot;
 import team1.robots.SoldierRobot;
@@ -48,6 +49,7 @@ public class RobotPlayer {
 	}
 	
 	private static void setRobot(RobotController rc) {
+		
 		if (rc.getType() == RobotType.HQ) {
 			robot = new HQRobot(rc);
 		}
@@ -70,6 +72,10 @@ public class RobotPlayer {
 
 		if (rc.getType() == RobotType.BARRACKS) {
 			robot = new BarracksRobot(rc);
+		}
+		
+		if (rc.getType() == RobotType.HELIPAD) {
+			robot = new HelipadRobot(rc);
 		}
 		
 		if (rc.getType() == RobotType.MINERFACTORY) {

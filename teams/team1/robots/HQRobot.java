@@ -9,6 +9,9 @@ import team1.common.Robot;
 import team1.common.SupplyHandler;
 import team1.common.Util;
 import team1.constants.BroadcastChannel;
+import team1.constants.StructureConstants;
+import team1.constants.UnitConstants;
+import battlecode.common.GameActionException;
 import battlecode.common.GameConstants;
 import battlecode.common.MapLocation;
 import battlecode.common.RobotController;
@@ -27,6 +30,8 @@ public class HQRobot extends Robot {
 	int numBashers;
 	int numBeavers;
 	int numBarracks;
+	int numHelipads;
+	int numAerospaceLabs;
 	int numMiners;
 	int numMinerFactories;
 	int numTankfactories;
@@ -37,22 +42,112 @@ public class HQRobot extends Robot {
 		
 	public HQRobot(RobotController rc) {
 		super(rc);
-		init();
 		army = new HashMap<Integer, RobotInfo>();
 	}
 	
-	private void init() {
-		// Set the first structure to build
-		broadcast.setPreferredStructure(RobotType.MINERFACTORY);
+	@Override
+	public String name() {
+		return "HQ";
+	}
+
+	@Override
+	public void update() {
+		
 	}
 	
 	@Override
-	public void update() {
+	public void run() throws Exception {
+
 		setArmyCheckPoint();
+		
 		totalSupplyGenerated = GameConstants.SUPPLY_GEN_BASE
                 * (GameConstants.SUPPLY_GEN_MULTIPLIER + Math.pow(numSupplyDepots, GameConstants.SUPPLY_GEN_EXPONENT));
+		
+		updateRobotCounts();
+		broadcastRobotCounts();
+		broadcastPreferredStructure();
+		
+		// give supply
+		SupplyHandler.hqGiveSupply(this);
+		
+		if (rc.isWeaponReady()) {
+			Action.attackSomething(myRange, enemyTeam, rc);
+		}
+
+		spawnBeaversStrategy();
 	}
 	
+	private void updateRobotCounts() {
+		numSoldiers = 0;
+		numBashers = 0;
+		numBeavers = 0;
+		numBarracks = 0;
+		numHelipads = 0;
+		numMiners = 0;
+		numMinerFactories = 0;
+		numTankfactories = 0;
+		numUnits = 0;
+		numSupplyDepots = 0;
+		numAerospaceLabs = 0;
+		
+		currentSupplyCount = 0f;
+		armyCount = 0;
+		
+		myRobots = rc.senseNearbyRobots(999999, myTeam);
+		
+		for (RobotInfo r : myRobots) {
+			currentSupplyCount += r.supplyLevel;
+
+			RobotType type = r.type;
+			if (type == RobotType.SOLDIER) numSoldiers++;
+			else if (type == RobotType.BASHER) numBashers++;
+			else if (type == RobotType.BEAVER) numBeavers++;
+			else if (type == RobotType.BARRACKS) numBarracks++;
+			else if (type == RobotType.HELIPAD) numHelipads++;
+			else if (type == RobotType.MINER) numMiners++;
+			else if (type == RobotType.MINERFACTORY) numMinerFactories++;
+			else if (type == RobotType.TANKFACTORY) numTankfactories++;
+			else if (type == RobotType.SUPPLYDEPOT) numSupplyDepots++;
+			else if (type == RobotType.AEROSPACELAB) numAerospaceLabs++;
+			
+			numUnits++;
+			
+			if (army.containsKey(r.ID)) armyCount++;
+		}
+	}
+	
+	private void broadcastRobotCounts() throws GameActionException {
+		
+		broadcast.sendInt(BroadcastChannel.NUM_BEAVERS, numBeavers);
+		broadcast.sendInt(BroadcastChannel.NUM_SOLDIERS, numSoldiers);
+		broadcast.sendInt(BroadcastChannel.NUM_BASHERS, numBashers);
+		broadcast.sendInt(BroadcastChannel.NUM_MINERS, numMiners);
+		broadcast.sendInt(BroadcastChannel.NUM_BARRACKS, numBarracks);
+		broadcast.sendInt(BroadcastChannel.NUM_HELIPADS, numHelipads);
+		broadcast.sendInt(BroadcastChannel.NUM_MINER_FACTORIES, numMinerFactories);
+		broadcast.sendInt(BroadcastChannel.NUM_TANK_FACTORIES, numTankfactories);
+		broadcast.sendInt(BroadcastChannel.NUM_SUPPLY_DEPOTS, numSupplyDepots);
+		broadcast.sendInt(BroadcastChannel.NUM_UNITS, numUnits);
+		broadcast.sendInt(BroadcastChannel.SUPPLY, (int) currentSupplyCount);
+		broadcast.sendLocation(BroadcastChannel.CHECKPOINT, armyCheckPoint);
+		//broadcast.sendInt(Parameters.BROAD_CHECKPOINT_Y, armyCheckPoint.y);
+	}
+
+	private void broadcastPreferredStructure() {
+		
+		RobotType preferredStructure = RobotType.HQ;
+		
+		if (numMinerFactories == 0) {
+			preferredStructure = RobotType.MINERFACTORY;
+		} else if (numHelipads == 0) {
+			preferredStructure = RobotType.HELIPAD;
+		} else if (numAerospaceLabs == 0) {
+			preferredStructure = RobotType.AEROSPACELAB;
+		}
+		
+		broadcast.setPreferredStructure(preferredStructure);
+	}
+
 	private void setArmyCheckPoint() {
 		MapLocation[]  enemyTowers = rc.senseEnemyTowerLocations();
 		
@@ -111,84 +206,20 @@ public class HQRobot extends Robot {
 		} else if (armyCount < 6)
 			armyCheckPoint = initialCheckpoint;
 	}
-	
-	@Override
-	public void run() throws Exception {
-//		int fate = rand.nextInt(10000);
-		myRobots = rc.senseNearbyRobots(999999, myTeam);
-		
-		numSoldiers = 0;
-		numBashers = 0;
-		numBeavers = 0;
-		numBarracks = 0;
-		numMiners = 0;
-		numMinerFactories = 0;
-		numTankfactories = 0;
-		numUnits = 0;
-		numSupplyDepots = 0;
-		
-		currentSupplyCount = 0f;
-		armyCount = 0;
-		for (RobotInfo r : myRobots) {
-			currentSupplyCount += r.supplyLevel;
-			
-			RobotType type = r.type;
-			if (type == RobotType.SOLDIER) {
-				numSoldiers++;
-			} else if (type == RobotType.BASHER) {
-				numBashers++;
-			} else if (type == RobotType.BEAVER) {
-				numBeavers++;
-			} else if (type == RobotType.BARRACKS) {
-				numBarracks++;
-			} else if (type == RobotType.MINER) {
-				numMiners++;
-			} else if (type == RobotType.MINERFACTORY) {
-				numMinerFactories++;
-			} else if (type == RobotType.TANKFACTORY) {
-				numTankfactories++;
-			} else if (type == RobotType.SUPPLYDEPOT) {
-				numSupplyDepots++;
-			}
-			numUnits++;
-			
-			if (army.containsKey(r.ID))
-				armyCount++;
-		}
-		
-		broadcast.sendInt(BroadcastChannel.NUM_BEAVERS, numBeavers);
-		broadcast.sendInt(BroadcastChannel.NUM_SOLDIERS, numSoldiers);
-		broadcast.sendInt(BroadcastChannel.NUM_BASHERS, numBashers);
-		broadcast.sendInt(BroadcastChannel.NUM_MINERS, numMiners);
-		broadcast.sendInt(BroadcastChannel.NUM_BARRACKS, numBarracks);
-		broadcast.sendInt(BroadcastChannel.NUM_MINER_FACTORIES, numMinerFactories);
-		broadcast.sendInt(BroadcastChannel.NUM_TANK_FACTORIES, numTankfactories);
-		broadcast.sendInt(BroadcastChannel.NUM_SUPPLY_DEPOTS, numSupplyDepots);
-		broadcast.sendInt(BroadcastChannel.NUM_UNITS, numUnits);
-		broadcast.sendInt(BroadcastChannel.SUPPLY, (int) currentSupplyCount);
-		broadcast.sendLocation(BroadcastChannel.CHECKPOINT, armyCheckPoint);
-		//broadcast.sendInt(Parameters.BROAD_CHECKPOINT_Y, armyCheckPoint.y);
-		
-		// give supply
-		SupplyHandler.hqGiveSupply(this);
-		
-		if (rc.isWeaponReady()) {
-			Action.attackSomething(myRange, enemyTeam, rc);
-		}
 
-		if (rc.isCoreReady() && rc.getTeamOre() >= 100 && numBeavers < Parameters.MAX_BEAVERS) {
+	private void spawnBeaversStrategy() throws GameActionException {
+		if (!rc.isCoreReady()) {
+			return;
+		}
+		
+		// Make sure that the first Miner Factory is built before the 3rd Beaver
+		if (numBeavers >= 2 && numMinerFactories == 0) {
+			return;
+		}
+		
+		if (rc.getTeamOre() >= UnitConstants.BEAVER_ORE_COST && 
+				numBeavers < Parameters.MAX_BEAVERS) {
 			Action.trySpawn(Util.directions[rand.nextInt(8)], RobotType.BEAVER, rc);
 		}
-		
 	}
-
-	@Override
-	public String name() {
-		return "HQ";
-	}
-
-
-
-
-
 }
