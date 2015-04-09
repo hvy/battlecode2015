@@ -149,18 +149,19 @@ public class HQRobot extends Robot {
 		
 		if (numMinerFactories == 0) {
 			preferredStructure = RobotType.MINERFACTORY;
+		} else if (numBarracks == 0) {
+			preferredStructure = RobotType.BARRACKS;
 		} else if (numHelipads == 0) {
 			preferredStructure = RobotType.HELIPAD;
-		} else if (numAerospaceLabs == 0) {
+		} else if (numAerospaceLabs < StructureConstants.AEROSPACE_LAB_MAX) {
 			preferredStructure = RobotType.AEROSPACELAB;
 		} else {
 			int numPreferredSupplyDepots = computeNumPreferredSupplyDepots();
-			System.out.println("Total upkeep: " + currentSupplyUpkeep);
-			System.out.println("Num preferred supply depots: " + numPreferredSupplyDepots);
+			//System.out.println("Total upkeep: " + currentSupplyUpkeep);
+			//System.out.println("Num preferred supply depots: " + numPreferredSupplyDepots);
 			if (numPreferredSupplyDepots > numSupplyDepots) {
 				preferredStructure = RobotType.SUPPLYDEPOT;
 			} else if (numHandwashStations == 0) {
-				System.out.println("Num handwash: " + numHandwashStations);
 				preferredStructure = RobotType.HANDWASHSTATION;
 			}
 		}

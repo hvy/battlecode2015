@@ -37,6 +37,7 @@ public class StructureConstants {
 	
 	// Aerospace Lab
 	public static int AEROSPACE_LAB_ORE_COST = 500;
+	public static int AEROSPACE_LAB_MAX = 2;
 	
 	// Handwash Station
 	public static int HANDWASH_STATION_LAB_ORE_COST = 200;

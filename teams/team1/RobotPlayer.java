@@ -12,8 +12,10 @@ import team1.robots.BeaverRobot;
 import team1.robots.HQRobot;
 import team1.robots.HelipadRobot;
 import team1.robots.IdleRobot;
+import team1.robots.LauncherRobot;
 import team1.robots.MinerFactoryRobot;
 import team1.robots.MinerRobot;
+import team1.robots.MissileRobot;
 import team1.robots.SoldierRobot;
 import team1.robots.TankFactoryRobot;
 import team1.robots.TankRobot;
@@ -73,6 +75,11 @@ public class RobotPlayer {
 		case TANK:
 			robot = new TankRobot(rc);
 			break;
+		case LAUNCHER:
+			robot = new LauncherRobot(rc);
+			break;
+		case MISSILE:
+			robot = new MissileRobot(rc);
 		case MINERFACTORY:
 			robot = new MinerFactoryRobot(rc);
 			break;
