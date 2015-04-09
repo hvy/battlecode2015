@@ -9,12 +9,13 @@ import team1.robots.AerospaceLabRobot;
 import team1.robots.BarracksRobot;
 import team1.robots.BasherRobot;
 import team1.robots.BeaverRobot;
+import team1.robots.FactoryRobot;
 import team1.robots.HQRobot;
 import team1.robots.HelipadRobot;
+import team1.robots.IdleRobot;
 import team1.robots.MinerFactoryRobot;
 import team1.robots.MinerRobot;
 import team1.robots.SoldierRobot;
-import team1.robots.SupplyDepotRobot;
 import team1.robots.TankFactoryRobot;
 import team1.robots.TankRobot;
 import team1.robots.TowerRobot;
@@ -50,18 +51,44 @@ public class RobotPlayer {
 	}
 	
 	private static void setRobot(RobotController rc) {
-		if (rc.getType() == RobotType.HQ) robot = new HQRobot(rc);
-		else if (rc.getType() == RobotType.TOWER) robot = new TowerRobot(rc);
-		else if (rc.getType() == RobotType.BASHER) robot = new BasherRobot(rc);
-		else if (rc.getType() == RobotType.SOLDIER) robot = new SoldierRobot(rc);
-		else if (rc.getType() == RobotType.BEAVER) robot = new BeaverRobot(rc);
-		else if (rc.getType() == RobotType.BARRACKS) robot = new BarracksRobot(rc);
-		else if (rc.getType() == RobotType.HELIPAD) robot = new HelipadRobot(rc);
-		else if (rc.getType() == RobotType.AEROSPACELAB) robot = new AerospaceLabRobot(rc);
-		else if (rc.getType() == RobotType.MINERFACTORY) robot = new MinerFactoryRobot(rc);
-		else if (rc.getType() == RobotType.MINER) robot = new MinerRobot(rc);
-		else if (rc.getType() == RobotType.SUPPLYDEPOT) robot = new SupplyDepotRobot(rc);
-		else if (rc.getType() == RobotType.TANK) robot = new TankRobot(rc);
-		else if (rc.getType() == RobotType.TANKFACTORY) robot = new TankFactoryRobot(rc);
+		
+		switch (rc.getType()) {
+		case HQ:
+			robot = new HQRobot(rc);
+			break;
+		case TOWER:
+			robot = new TowerRobot(rc);
+			break;
+		case BEAVER:
+			robot = new BeaverRobot(rc);
+			break;
+		case MINER:
+			robot = new MinerRobot(rc);
+			break;
+		case SOLDIER:
+			robot = new SoldierRobot(rc);
+		case BASHER:
+			robot = new BasherRobot(rc);
+		case TANK:
+			robot = new TankRobot(rc);
+		case MINERFACTORY:
+			robot = new MinerFactoryRobot(rc);
+			break;
+		case TECHNOLOGYINSTITUTE:
+		case TRAININGFIELD:
+		case BARRACKS:
+		case TANKFACTORY:
+		case HELIPAD:
+		case AEROSPACELAB:
+			robot = new FactoryRobot(rc);
+			break;
+		case SUPPLYDEPOT:
+		case COMPUTER:
+		case HANDWASHSTATION:
+			robot = new IdleRobot(rc);
+			break;
+		default:
+			break;
+		}
 	}	
 }

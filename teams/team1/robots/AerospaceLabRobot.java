@@ -1,7 +1,7 @@
 package team1.robots;
 
-import battlecode.common.RobotController;
 import team1.common.Robot;
+import battlecode.common.RobotController;
 
 public class AerospaceLabRobot extends Robot {
 
