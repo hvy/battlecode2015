@@ -56,7 +56,7 @@ public class Util {
 		return Math.max(Math.abs(x), Math.abs(y));
 	}
 	
-	public static Direction rndDirection() {
+	public static Direction getRandomDirection() {
 		return directions[rnd.nextInt(8)];
 	}
 	

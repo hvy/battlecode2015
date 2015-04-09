@@ -21,6 +21,7 @@ import battlecode.common.RobotType;
 public class HQRobot extends Robot {
 	
 	double currentSupplyCount = 0f;
+	double currentSupplyUpkeep = 0;
 	MapLocation armyCheckPoint;
 	MapLocation initialCheckpoint;
 	HashMap<Integer, RobotInfo> army;
@@ -37,6 +38,7 @@ public class HQRobot extends Robot {
 	int numTankfactories;
 	int numUnits;
 	int numSupplyDepots;
+	int numHandwashStations;
 	
 	public static double totalSupplyGenerated;
 		
@@ -89,14 +91,18 @@ public class HQRobot extends Robot {
 		numUnits = 0;
 		numSupplyDepots = 0;
 		numAerospaceLabs = 0;
+		numHandwashStations = 0;
 		
 		currentSupplyCount = 0f;
+		currentSupplyUpkeep = 0f;
 		armyCount = 0;
 		
 		myRobots = rc.senseNearbyRobots(999999, myTeam);
 		
 		for (RobotInfo r : myRobots) {
+			
 			currentSupplyCount += r.supplyLevel;
+			currentSupplyUpkeep += r.type.supplyUpkeep;
 
 			RobotType type = r.type;
 			if (type == RobotType.SOLDIER) numSoldiers++;
@@ -109,6 +115,7 @@ public class HQRobot extends Robot {
 			else if (type == RobotType.TANKFACTORY) numTankfactories++;
 			else if (type == RobotType.SUPPLYDEPOT) numSupplyDepots++;
 			else if (type == RobotType.AEROSPACELAB) numAerospaceLabs++;
+			else if (type == RobotType.HANDWASHSTATION) numHandwashStations++; 
 			
 			numUnits++;
 			
@@ -133,6 +140,9 @@ public class HQRobot extends Robot {
 		//broadcast.sendInt(Parameters.BROAD_CHECKPOINT_Y, armyCheckPoint.y);
 	}
 
+	/* 
+	 * The build order of the structures.
+	 */
 	private void broadcastPreferredStructure() {
 		
 		RobotType preferredStructure = RobotType.HQ;
@@ -143,9 +153,28 @@ public class HQRobot extends Robot {
 			preferredStructure = RobotType.HELIPAD;
 		} else if (numAerospaceLabs == 0) {
 			preferredStructure = RobotType.AEROSPACELAB;
+		} else {
+			int numPreferredSupplyDepots = computeNumPreferredSupplyDepots();
+			System.out.println("Total upkeep: " + currentSupplyUpkeep);
+			System.out.println("Num preferred supply depots: " + numPreferredSupplyDepots);
+			if (numPreferredSupplyDepots > numSupplyDepots) {
+				preferredStructure = RobotType.SUPPLYDEPOT;
+			} else if (numHandwashStations == 0) {
+				System.out.println("Num handwash: " + numHandwashStations);
+				preferredStructure = RobotType.HANDWASHSTATION;
+			}
 		}
 		
 		broadcast.setPreferredStructure(preferredStructure);
+	}
+
+	private int computeNumPreferredSupplyDepots() {
+		// Supply generation per turn = 100 * (2 + supply_depots ^ 0.6)
+		// Preferably, the supply generation is equal to the current supply upkeep
+		
+		double numPreferredSupplyDepots = Math.pow((currentSupplyUpkeep / (double) 100) - (double) 2, (double) 10/6);
+		
+		return (int) (numPreferredSupplyDepots + 0.5);
 	}
 
 	private void setArmyCheckPoint() {
@@ -163,7 +192,6 @@ public class HQRobot extends Robot {
 						idx = i;
 					}
 				}
-				
 			}
 			
 			if (towers.length > 1)
@@ -186,7 +214,6 @@ public class HQRobot extends Robot {
 			if (home.distanceSquaredTo(enemyTowers[i]) < closestToHome) {
 				closestToHome = home.distanceSquaredTo(enemyTowers[i]);
 			}
-			
 		}
 		
 		// if army consists of 10 or more units, start advancing
@@ -217,9 +244,8 @@ public class HQRobot extends Robot {
 			return;
 		}
 		
-		if (rc.getTeamOre() >= UnitConstants.BEAVER_ORE_COST && 
-				numBeavers < Parameters.MAX_BEAVERS) {
-			Action.trySpawn(Util.directions[rand.nextInt(8)], RobotType.BEAVER, rc);
+		if (rc.getTeamOre() >= UnitConstants.BEAVER_ORE_COST && numBeavers < Parameters.MAX_BEAVERS) {
+			Action.trySpawn(Util.getRandomDirection(), RobotType.BEAVER, rc);
 		}
 	}
 }

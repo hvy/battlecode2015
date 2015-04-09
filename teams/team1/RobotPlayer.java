@@ -9,7 +9,6 @@ import team1.robots.AerospaceLabRobot;
 import team1.robots.BarracksRobot;
 import team1.robots.BasherRobot;
 import team1.robots.BeaverRobot;
-import team1.robots.FactoryRobot;
 import team1.robots.HQRobot;
 import team1.robots.HelipadRobot;
 import team1.robots.IdleRobot;
@@ -67,20 +66,27 @@ public class RobotPlayer {
 			break;
 		case SOLDIER:
 			robot = new SoldierRobot(rc);
+			break;
 		case BASHER:
 			robot = new BasherRobot(rc);
+			break;
 		case TANK:
 			robot = new TankRobot(rc);
+			break;
 		case MINERFACTORY:
 			robot = new MinerFactoryRobot(rc);
 			break;
-		case TECHNOLOGYINSTITUTE:
-		case TRAININGFIELD:
 		case BARRACKS:
+			robot = new BarracksRobot(rc);
+			break;
 		case TANKFACTORY:
+			robot = new TankFactoryRobot(rc);
+			break;
 		case HELIPAD:
+			robot = new HelipadRobot(rc);
+			break;
 		case AEROSPACELAB:
-			robot = new FactoryRobot(rc);
+			robot = new AerospaceLabRobot(rc);
 			break;
 		case SUPPLYDEPOT:
 		case COMPUTER:
@@ -88,6 +94,7 @@ public class RobotPlayer {
 			robot = new IdleRobot(rc);
 			break;
 		default:
+			System.out.println("Unknown/Unimplemented robot cannot be instantiated.");
 			break;
 		}
 	}	

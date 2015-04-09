@@ -42,9 +42,7 @@ public abstract class Robot {
 	}
 	
 	public abstract void run() throws Exception;
-	
 	public abstract void update();
-	
 	public abstract String name();
 	
 	protected MapLocation getCheckpoint() throws GameActionException {

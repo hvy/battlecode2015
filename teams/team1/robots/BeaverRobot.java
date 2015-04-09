@@ -86,7 +86,7 @@ public class BeaverRobot extends Robot {
 	private void updateBuildLocation() {
 		
 		//Direction direction = location.directionTo(rc.senseHQLocation());
-		Direction direction = Util.rndDirection();
+		Direction direction = Util.getRandomDirection();
 		
 		int testedTiles = 0;
 		int maxTestedTiles = 100;
