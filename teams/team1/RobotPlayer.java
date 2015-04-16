@@ -80,6 +80,7 @@ public class RobotPlayer {
 			break;
 		case MISSILE:
 			robot = new MissileRobot(rc);
+			break;
 		case MINERFACTORY:
 			robot = new MinerFactoryRobot(rc);
 			break;

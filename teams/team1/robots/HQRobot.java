@@ -149,8 +149,8 @@ public class HQRobot extends Robot {
 		
 		if (numMinerFactories == 0) {
 			preferredStructure = RobotType.MINERFACTORY;
-		} else if (numBarracks == 0) {
-			preferredStructure = RobotType.BARRACKS;
+		//} else if (numBarracks == 0) {
+		//	preferredStructure = RobotType.BARRACKS;
 		} else if (numHelipads == 0) {
 			preferredStructure = RobotType.HELIPAD;
 		} else if (numAerospaceLabs < StructureConstants.AEROSPACE_LAB_MAX) {
@@ -220,7 +220,7 @@ public class HQRobot extends Robot {
 		// if army consists of 10 or more units, start advancing
 		RobotInfo[] nearby = rc.senseNearbyRobots(armyCheckPoint, 30, myTeam);
 		
-		if (nearby.length >= 15) {
+		if (nearby.length >= 4) {
 			
 			army.clear();
 			for (int i = 0; i < nearby.length; i++) {

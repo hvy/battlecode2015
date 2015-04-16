@@ -4,6 +4,7 @@ import team1.common.Action;
 import team1.common.Robot;
 import team1.common.SupplyHandler;
 import team1.common.Util;
+import team1.constants.BroadcastChannel;
 import battlecode.common.Direction;
 import battlecode.common.GameActionException;
 import battlecode.common.MapLocation;
@@ -13,6 +14,9 @@ import battlecode.common.RobotType;
 
 public class LauncherRobot extends Robot {
 	
+	MapLocation targetTowerPos = null;
+	RobotInfo[] nearbyEnemies;
+	
 	public LauncherRobot(RobotController rc) {
 		super(rc);
 	}
@@ -20,15 +24,45 @@ public class LauncherRobot extends Robot {
 	@Override
 	public void run() throws Exception {
 		
+		location = rc.getLocation();
 		
-		if (rc.getMissileCount() > 0) {
-            tryMissileLaunch();
-        }
-		
+		// Handle supply management
 		SupplyHandler.shareSupply(this);
 	    SupplyHandler.requestResupplyIfNecessary(this);
-	     
+		
+		nearbyEnemies = rc.senseNearbyRobots(63, enemyTeam);
+		
 		if (rc.isCoreReady()) {
+			// Enemies nearby
+			if (nearbyEnemies.length > 0) {
+				
+				// No missiles, try to flee
+				if (rc.getMissileCount() == 0) {
+					Action.tryMove(location.directionTo(nearbyEnemies[0].location).opposite(), rc);
+				} else {
+					// Attack
+					tryMissileLaunch();
+					Action.tryMove(location.directionTo(nearbyEnemies[0].location).opposite(), rc);
+				}
+				
+				return;
+				//rc.yield();
+			}
+			
+			if (targetTowerPos == null) {
+				MapLocation[] towers = rc.senseEnemyTowerLocations();
+				targetTowerPos = towers[Util.getRndInt(towers.length)];
+			}
+			
+			Action.tryMove(location.directionTo(targetTowerPos), rc);
+			
+			
+			
+			//MapLocation target = broadcast.readLocation(BroadcastChannel.LAUNCHER_ARMY_TARGET_POS);
+			//if (target.x != 0 && target.y != 0) {
+			//	Action.tryMove(rc.getLocation().directionTo(target), rc);	
+			//}
+			/*
 			int fate = rand.nextInt(1000);
 			if (fate < 30) {
 				Action.tryMove(Util.directions[rand.nextInt(8)], rc);
@@ -39,12 +73,11 @@ public class LauncherRobot extends Robot {
 				else 
 					Action.tryMove(rc.getLocation().directionTo(getCheckpoint()), rc);
 			}
+			*/
 		}
-		
 	}
 	
 	private boolean tryMissileLaunch() throws GameActionException {
-        RobotInfo[] nearbyEnemies = rc.senseNearbyRobots(63, enemyTeam);
 
         for (RobotInfo enemy : nearbyEnemies) {
             if (enemy.type != RobotType.MISSILE) {

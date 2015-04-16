@@ -26,14 +26,16 @@ public class MissileRobot extends Robot {
 		} catch (GameActionException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	@Override
 	public void run() throws Exception {
+		
 		RobotInfo[] adjacentEnemies = rc.senseNearbyRobots(2, rc.getTeam().opponent());
         for (int i = adjacentEnemies.length; i-- > 0;) {
-            if (adjacentEnemies[i].type != RobotType.MISSILE) rc.explode();
+            if (adjacentEnemies[i].type != RobotType.MISSILE) {
+            	rc.explode();	
+            }
         }
 
         if (rc.canSenseRobot(info.targetID)) {
@@ -45,7 +47,7 @@ public class MissileRobot extends Robot {
 
         RobotInfo blockage = rc.senseRobotAtLocation(here.add(dir));
         if (blockage != null && !blockage.team.equals(rc.getTeam()) && blockage.type != RobotType.MISSILE) {
-            // System.out.println("exploding at blockage");
+            //System.out.println("exploding at blockage");
             rc.explode();
             return;
         }

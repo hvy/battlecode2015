@@ -60,4 +60,8 @@ public class Util {
 		return directions[rnd.nextInt(8)];
 	}
 	
+	public static int getRndInt(int i) {
+		return rnd.nextInt(i);
+	}
+	
 }
