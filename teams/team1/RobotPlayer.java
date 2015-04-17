@@ -9,6 +9,7 @@ import team1.robots.AerospaceLabRobot;
 import team1.robots.BarracksRobot;
 import team1.robots.BasherRobot;
 import team1.robots.BeaverRobot;
+import team1.robots.DroneRobot;
 import team1.robots.HQRobot;
 import team1.robots.HelipadRobot;
 import team1.robots.IdleRobot;
@@ -74,6 +75,9 @@ public class RobotPlayer {
 			break;
 		case TANK:
 			robot = new TankRobot(rc);
+			break;
+		case DRONE:
+			robot = new DroneRobot(rc);
 			break;
 		case LAUNCHER:
 			robot = new LauncherRobot(rc);

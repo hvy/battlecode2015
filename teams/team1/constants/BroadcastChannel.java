@@ -11,6 +11,8 @@ public class BroadcastChannel {
 	public static int NUM_SOLDIERS 					= 1;
 	public static int NUM_BASHERS 					= 2;
 	public static int NUM_MINERS 					= 3;
+	public static int NUM_DRONES 					= 4;
+	public static int NUM_LAUNCHERS					= 5;
 	
 	// Channels used to broadcast the number of structures
 	public static int NUM_BARRACKS 					= 100;

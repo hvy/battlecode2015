@@ -32,6 +32,8 @@ public class HQRobot extends Robot {
 	int numBeavers;
 	int numBarracks;
 	int numHelipads;
+	int numDrones;
+	int numLaunchers;
 	int numAerospaceLabs;
 	int numMiners;
 	int numMinerFactories;
@@ -87,6 +89,8 @@ public class HQRobot extends Robot {
 		numHelipads = 0;
 		numMiners = 0;
 		numMinerFactories = 0;
+		numDrones = 0;
+		numLaunchers = 0;
 		numTankfactories = 0;
 		numUnits = 0;
 		numSupplyDepots = 0;
@@ -116,6 +120,8 @@ public class HQRobot extends Robot {
 			else if (type == RobotType.SUPPLYDEPOT) numSupplyDepots++;
 			else if (type == RobotType.AEROSPACELAB) numAerospaceLabs++;
 			else if (type == RobotType.HANDWASHSTATION) numHandwashStations++; 
+			else if (type == RobotType.DRONE) numDrones++;
+			else if (type == RobotType.LAUNCHER) numLaunchers++;
 			
 			numUnits++;
 			
@@ -129,11 +135,13 @@ public class HQRobot extends Robot {
 		broadcast.sendInt(BroadcastChannel.NUM_SOLDIERS, numSoldiers);
 		broadcast.sendInt(BroadcastChannel.NUM_BASHERS, numBashers);
 		broadcast.sendInt(BroadcastChannel.NUM_MINERS, numMiners);
+		broadcast.sendInt(BroadcastChannel.NUM_DRONES, numDrones);
 		broadcast.sendInt(BroadcastChannel.NUM_BARRACKS, numBarracks);
 		broadcast.sendInt(BroadcastChannel.NUM_HELIPADS, numHelipads);
 		broadcast.sendInt(BroadcastChannel.NUM_MINER_FACTORIES, numMinerFactories);
 		broadcast.sendInt(BroadcastChannel.NUM_TANK_FACTORIES, numTankfactories);
 		broadcast.sendInt(BroadcastChannel.NUM_SUPPLY_DEPOTS, numSupplyDepots);
+		broadcast.sendInt(BroadcastChannel.NUM_LAUNCHERS, numLaunchers);
 		broadcast.sendInt(BroadcastChannel.NUM_UNITS, numUnits);
 		broadcast.sendInt(BroadcastChannel.SUPPLY, (int) currentSupplyCount);
 		broadcast.sendLocation(BroadcastChannel.CHECKPOINT, armyCheckPoint);
@@ -161,9 +169,12 @@ public class HQRobot extends Robot {
 			//System.out.println("Num preferred supply depots: " + numPreferredSupplyDepots);
 			if (numPreferredSupplyDepots > numSupplyDepots) {
 				preferredStructure = RobotType.SUPPLYDEPOT;
-			} else if (numHandwashStations == 0) {
-				preferredStructure = RobotType.HANDWASHSTATION;
-			}
+			} 
+			
+			// Uncomment if Handwash stations are to be built
+			// else if (numHandwashStations == 0) {
+			//	preferredStructure = RobotType.HANDWASHSTATION;
+			// }
 		}
 		
 		broadcast.setPreferredStructure(preferredStructure);
