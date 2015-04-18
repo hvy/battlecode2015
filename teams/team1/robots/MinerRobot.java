@@ -156,7 +156,7 @@ public class MinerRobot extends Robot {
 	 
 	 private void goGetSupplies() throws GameActionException {
 		 
-		 if (needSupplies()) {
+		 if (needSupplies() && rc.getLocation().distanceSquaredTo(home) < 10) {
 			 if (rc.isCoreReady())
 				 Action.tryMove(location.directionTo(home), rc);
 			 gettingSupplies = true;

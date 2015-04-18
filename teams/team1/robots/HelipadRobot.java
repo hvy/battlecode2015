@@ -38,7 +38,7 @@ public class HelipadRobot extends Robot {
 			numLaunchers = broadcast.readInt(BroadcastChannel.NUM_LAUNCHERS);
 			
 			if((numDrones == 0 && numLaunchers > 1) ||
-					(numDrones == 1 && numLaunchers > 7)) {
+					(numDrones < 4 && numLaunchers > 7)) {
 				Action.trySpawn(Util.getRandomDirection(),RobotType.DRONE, rc);	
 			}
 		}

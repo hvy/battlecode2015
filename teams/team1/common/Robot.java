@@ -49,6 +49,10 @@ public abstract class Robot {
 		return broadcast.readLocation(BroadcastChannel.CHECKPOINT);
 	}
 	
+	protected MapLocation getCheckpoint2() throws GameActionException {
+		return broadcast.readLocation(BroadcastChannel.CHECKPOINT2);
+	}
+	
 	protected boolean inEnemyTowerOrHQRange(MapLocation loc, MapLocation[] enemyTowers) {
         if (loc.distanceSquaredTo(enemyHome) <= 52) {
             switch (enemyTowers.length) {

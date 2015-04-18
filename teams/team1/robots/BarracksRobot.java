@@ -36,7 +36,7 @@ public class BarracksRobot extends Robot {
 				return;
 			
 			if (rc.getTeamOre() > 80 && fate < 100) {
-				Action.trySpawn(Util.directions[rand.nextInt(8)],RobotType.BASHER, rc);
+				//Action.trySpawn(Util.directions[rand.nextInt(8)],RobotType.BASHER, rc);
 			} else {
 				Action.trySpawn(Util.directions[rand.nextInt(8)],RobotType.SOLDIER, rc);
 			}

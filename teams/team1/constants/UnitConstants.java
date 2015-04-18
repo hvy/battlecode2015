@@ -43,6 +43,9 @@ public class UnitConstants {
 	// Launcher
 	public static int LAUNCHER_ORE_COST = 400;
 	
+	// Commander
+	public static int COMMANDER_ORE_COST = 100;
+	
 	// Missile
 	
 }

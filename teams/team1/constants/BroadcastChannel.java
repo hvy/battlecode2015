@@ -28,7 +28,8 @@ public class BroadcastChannel {
 	public static int SUPPLY 						= 104;
 	public static int SUPPLY_MAX_NEEDED 			= 105;
 	public static int CHECKPOINT 					= 120; // covers channel 121 also
-	public static int MOST_NEEDED_SUPPLY_LOCATION 	= 122; // covers channel 122 also
+	public static int CHECKPOINT2 					= 122; // covers channel 123 also
+	public static int MOST_NEEDED_SUPPLY_LOCATION 	= 124; // covers channel 125 also
 	
 	// Channels used to broadcast missile targets
 	public static int MISSILE_BASE = 500;

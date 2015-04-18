@@ -16,9 +16,13 @@ public class LauncherRobot extends Robot {
 	
 	MapLocation targetTowerPos = null;
 	RobotInfo[] nearbyEnemies;
+	int army = 0;
+	int towerindex = 0;
 	
 	public LauncherRobot(RobotController rc) {
 		super(rc);
+		towerindex = rand.nextInt(rc.senseTowerLocations().length);
+		army = rand.nextInt(2);
 	}
 
 	@Override
@@ -54,7 +58,15 @@ public class LauncherRobot extends Robot {
 				targetTowerPos = towers[Util.getRndInt(towers.length)];
 			}
 			
-			Action.tryMove(location.directionTo(targetTowerPos), rc);
+			
+			// move to checkpoint
+			int x_m = home.x + (rc.senseEnemyHQLocation().x - home.x)/2;
+			int y_m = home.y - (home.y - rc.senseEnemyHQLocation().y)/2;
+			
+			MapLocation gatheringPoint = new MapLocation(x_m, y_m);
+
+				Action.tryMove(rc.getLocation().directionTo(getCheckpoint()), rc);
+
 			
 			
 			

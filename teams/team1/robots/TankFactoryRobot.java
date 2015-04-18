@@ -20,7 +20,7 @@ public class TankFactoryRobot extends Robot {
 
 	@Override
 	public void run() throws Exception {
-		int fate = rand.nextInt(10000);
+		int fate = rand.nextInt(100);
 
 		// get information broadcasted by the HQ
 		int numBeavers = rc.readBroadcast(0);
@@ -29,7 +29,7 @@ public class TankFactoryRobot extends Robot {
 		
 
 		if (rc.isCoreReady()) {
-			if (rc.getTeamOre() >= 250) {
+			if (rc.getTeamOre() >= 250 && fate > 60) {
 				Action.trySpawn(Util.directions[rand.nextInt(8)],RobotType.TANK, rc);
 			}
 		}

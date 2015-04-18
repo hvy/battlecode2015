@@ -9,6 +9,7 @@ import team1.robots.AerospaceLabRobot;
 import team1.robots.BarracksRobot;
 import team1.robots.BasherRobot;
 import team1.robots.BeaverRobot;
+import team1.robots.CommanderRobot;
 import team1.robots.DroneRobot;
 import team1.robots.HQRobot;
 import team1.robots.HelipadRobot;
@@ -20,7 +21,9 @@ import team1.robots.MissileRobot;
 import team1.robots.SoldierRobot;
 import team1.robots.TankFactoryRobot;
 import team1.robots.TankRobot;
+import team1.robots.TechInstRobot;
 import team1.robots.TowerRobot;
+import team1.robots.TrainFieldRobot;
 
 public class RobotPlayer {
 
@@ -99,6 +102,15 @@ public class RobotPlayer {
 			break;
 		case AEROSPACELAB:
 			robot = new AerospaceLabRobot(rc);
+			break;
+		case COMMANDER:
+			robot = new CommanderRobot(rc);
+			break;
+		case TECHNOLOGYINSTITUTE:
+			robot = new TechInstRobot(rc);
+			break;
+		case TRAININGFIELD:
+			robot = new TrainFieldRobot(rc);
 			break;
 		case SUPPLYDEPOT:
 		case COMPUTER:

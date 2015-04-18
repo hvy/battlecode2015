@@ -27,6 +27,7 @@ public class HQRobot extends Robot {
 	HashMap<Integer, RobotInfo> army;
 	
 	int armyCount;
+	int armyCount2;
 	int numSoldiers;
 	int numBashers;
 	int numBeavers;
@@ -41,6 +42,8 @@ public class HQRobot extends Robot {
 	int numUnits;
 	int numSupplyDepots;
 	int numHandwashStations;
+	int numTrainField;
+	int numTechInst;
 	
 	public static double totalSupplyGenerated;
 		
@@ -96,10 +99,13 @@ public class HQRobot extends Robot {
 		numSupplyDepots = 0;
 		numAerospaceLabs = 0;
 		numHandwashStations = 0;
+		numTechInst = 0;
+		numTrainField = 0;
 		
 		currentSupplyCount = 0f;
 		currentSupplyUpkeep = 0f;
 		armyCount = 0;
+		armyCount2 = 0;
 		
 		myRobots = rc.senseNearbyRobots(999999, myTeam);
 		
@@ -122,6 +128,8 @@ public class HQRobot extends Robot {
 			else if (type == RobotType.HANDWASHSTATION) numHandwashStations++; 
 			else if (type == RobotType.DRONE) numDrones++;
 			else if (type == RobotType.LAUNCHER) numLaunchers++;
+			else if (type == RobotType.TECHNOLOGYINSTITUTE) numTechInst++;
+			else if (type == RobotType.TRAININGFIELD) numTrainField++;
 			
 			numUnits++;
 			
@@ -157,13 +165,20 @@ public class HQRobot extends Robot {
 		
 		if (numMinerFactories == 0) {
 			preferredStructure = RobotType.MINERFACTORY;
-		//} else if (numBarracks == 0) {
-		//	preferredStructure = RobotType.BARRACKS;
+		} else if (numBarracks < Parameters.MAX_BARRACKS) {
+			preferredStructure = RobotType.BARRACKS;
+		} else if (numTankfactories < Parameters.MAX_TANK_FACTORIES) {
+			preferredStructure = RobotType.TANKFACTORY;
+		} else if (numTechInst < 1) {
+			preferredStructure = RobotType.TECHNOLOGYINSTITUTE;
+		} else if (numTrainField < 1) {
+			preferredStructure = RobotType.TRAININGFIELD;
 		} else if (numHelipads == 0) {
 			preferredStructure = RobotType.HELIPAD;
 		} else if (numAerospaceLabs < StructureConstants.AEROSPACE_LAB_MAX) {
 			preferredStructure = RobotType.AEROSPACELAB;
-		} else {
+		}
+		
 			int numPreferredSupplyDepots = computeNumPreferredSupplyDepots();
 			//System.out.println("Total upkeep: " + currentSupplyUpkeep);
 			//System.out.println("Num preferred supply depots: " + numPreferredSupplyDepots);
@@ -175,7 +190,6 @@ public class HQRobot extends Robot {
 			// else if (numHandwashStations == 0) {
 			//	preferredStructure = RobotType.HANDWASHSTATION;
 			// }
-		}
 		
 		broadcast.setPreferredStructure(preferredStructure);
 	}
@@ -186,7 +200,7 @@ public class HQRobot extends Robot {
 		
 		double numPreferredSupplyDepots = Math.pow((currentSupplyUpkeep / (double) 100) - (double) 2, (double) 10/6);
 		
-		return (int) (numPreferredSupplyDepots + 0.5);
+		return (int) ((int) (numPreferredSupplyDepots + 0.5)/2.5);
 	}
 
 	private void setArmyCheckPoint() {
@@ -206,10 +220,17 @@ public class HQRobot extends Robot {
 				}
 			}
 			
-			if (towers.length > 1)
-				armyCheckPoint = towers[idx];
-			else
+			if (towers.length > 1) {
+				armyCheckPoint = rc.senseEnemyHQLocation();
+			} else {
 				armyCheckPoint = home;
+			}
+			
+			int x_m = home.x + (armyCheckPoint.x - home.x)/3;
+			int y_m = home.y - (home.y - armyCheckPoint.y)/3;
+			
+			armyCheckPoint = new MapLocation(x_m, y_m);
+			
 			initialCheckpoint = armyCheckPoint;
 		}
 		
@@ -217,6 +238,10 @@ public class HQRobot extends Robot {
 		int towerIndex = 0;
 		double closestToHome = Double.MAX_VALUE;
 		double closestDistance = Double.MAX_VALUE;
+		
+		int towerIndex2 = 0;
+		double closestToHome2 = Double.MAX_VALUE;
+		double closestDistance2 = Double.MAX_VALUE;
 		for (int i = 0; i < enemyTowers.length; i++) {
 			if (armyCheckPoint.distanceSquaredTo(enemyTowers[i]) < closestDistance) {
 				towerIndex = i;
@@ -226,24 +251,45 @@ public class HQRobot extends Robot {
 			if (home.distanceSquaredTo(enemyTowers[i]) < closestToHome) {
 				closestToHome = home.distanceSquaredTo(enemyTowers[i]);
 			}
+
 		}
 		
 		// if army consists of 10 or more units, start advancing
-		RobotInfo[] nearby = rc.senseNearbyRobots(armyCheckPoint, 30, myTeam);
+		RobotInfo[] nearby = rc.senseNearbyRobots(armyCheckPoint, 40, myTeam);
 		
-		if (nearby.length >= 4) {
+		MapLocation newAttackPoint;
+		if (rc.senseEnemyTowerLocations().length > 0)
+			newAttackPoint = rc.senseEnemyTowerLocations()[towerIndex];
+		else
+			newAttackPoint = enemyHome;
+		
+//		if (armyCheckPoint.distanceSquaredTo(rc.senseEnemyTowerLocations()[towerIndex]) > armyCheckPoint.distanceSquaredTo(enemyHome))
+//			newAttackPoint = enemyHome;
+		
+		int units = 0;
+		for (int i = 0; i < nearby.length; i++) {
+			if (nearby[i].type == RobotType.TANK || nearby[i].type == RobotType.LAUNCHER)
+				units++;
+		}
+		
+		if (units >= Parameters.ARMY_COUNT) {
 			
 			army.clear();
 			for (int i = 0; i < nearby.length; i++) {
 				army.put(nearby[i].ID, nearby[i]);
 			}
 			
-			int x_m = armyCheckPoint.x + (rc.senseEnemyTowerLocations()[towerIndex].x - armyCheckPoint.x)/2;
-			int y_m = armyCheckPoint.y - (armyCheckPoint.y - rc.senseEnemyTowerLocations()[towerIndex].y)/2;
+			int x_m = armyCheckPoint.x + (newAttackPoint.x - armyCheckPoint.x)/2;
+			int y_m = armyCheckPoint.y - (armyCheckPoint.y - newAttackPoint.y)/2;
 			
+			MapLocation old = armyCheckPoint;
 			armyCheckPoint = new MapLocation(x_m, y_m);
-		} else if (armyCount < 6)
+			
+			if (old.distanceSquaredTo(armyCheckPoint) <= RobotType.TOWER.attackRadiusSquared+3)
+				armyCheckPoint = newAttackPoint;
+		} else if (armyCount < 2)
 			armyCheckPoint = initialCheckpoint;
+		
 	}
 
 	private void spawnBeaversStrategy() throws GameActionException {
@@ -252,7 +298,7 @@ public class HQRobot extends Robot {
 		}
 		
 		// Make sure that the first Miner Factory is built before the 3rd Beaver
-		if (numBeavers >= 2 && numMinerFactories == 0) {
+		if (numBeavers >= Parameters.MAX_BEAVERS && numMinerFactories == 0) {
 			return;
 		}
 		
