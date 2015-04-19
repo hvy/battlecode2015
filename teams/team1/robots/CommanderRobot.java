@@ -52,7 +52,7 @@ public class CommanderRobot extends Robot {
 				if (rc.senseTowerLocations().length == 0)
 					Action.tryMove(rc.getLocation().directionTo(home), rc);
 				else 
-					Action.tryMove(rc.getLocation().directionTo(getCheckpoint()), rc);
+					Action.tryMove(rc.getLocation().directionTo(getCheckpoint2()), rc);
 			}
 		}
 		

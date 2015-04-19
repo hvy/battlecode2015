@@ -23,8 +23,12 @@ public class HQRobot extends Robot {
 	double currentSupplyCount = 0f;
 	double currentSupplyUpkeep = 0;
 	MapLocation armyCheckPoint;
+	MapLocation tankCheckPoint;
 	MapLocation initialCheckpoint;
+	MapLocation tankInitialCheckpoint;
 	HashMap<Integer, RobotInfo> army;
+	HashMap<Integer, RobotInfo> armyTanks;
+	
 	
 	int armyCount;
 	int armyCount2;
@@ -50,6 +54,8 @@ public class HQRobot extends Robot {
 	public HQRobot(RobotController rc) {
 		super(rc);
 		army = new HashMap<Integer, RobotInfo>();
+		armyTanks = new HashMap<Integer, RobotInfo>();
+
 	}
 	
 	@Override
@@ -134,6 +140,7 @@ public class HQRobot extends Robot {
 			numUnits++;
 			
 			if (army.containsKey(r.ID)) armyCount++;
+			if (armyTanks.containsKey(r.ID)) armyCount2++;
 		}
 	}
 	
@@ -153,7 +160,8 @@ public class HQRobot extends Robot {
 		broadcast.sendInt(BroadcastChannel.NUM_UNITS, numUnits);
 		broadcast.sendInt(BroadcastChannel.SUPPLY, (int) currentSupplyCount);
 		broadcast.sendLocation(BroadcastChannel.CHECKPOINT, armyCheckPoint);
-		//broadcast.sendInt(Parameters.BROAD_CHECKPOINT_Y, armyCheckPoint.y);
+		broadcast.sendLocation(BroadcastChannel.CHECKPOINT2, tankCheckPoint);
+//		broadcast.sendInt(Parameters.BROAD_CHECKPOINT_Y, armyCheckPoint.y);
 	}
 
 	/* 
@@ -165,10 +173,6 @@ public class HQRobot extends Robot {
 		
 		if (numMinerFactories == 0) {
 			preferredStructure = RobotType.MINERFACTORY;
-		} else if (numBarracks < Parameters.MAX_BARRACKS) {
-			preferredStructure = RobotType.BARRACKS;
-		} else if (numTankfactories < Parameters.MAX_TANK_FACTORIES) {
-			preferredStructure = RobotType.TANKFACTORY;
 		} else if (numTechInst < 1) {
 			preferredStructure = RobotType.TECHNOLOGYINSTITUTE;
 		} else if (numTrainField < 1) {
@@ -177,6 +181,10 @@ public class HQRobot extends Robot {
 			preferredStructure = RobotType.HELIPAD;
 		} else if (numAerospaceLabs < StructureConstants.AEROSPACE_LAB_MAX) {
 			preferredStructure = RobotType.AEROSPACELAB;
+		} else if (numBarracks < Parameters.MAX_BARRACKS && numLaunchers > 18) {
+			preferredStructure = RobotType.BARRACKS;
+		} else if (numTankfactories < Parameters.MAX_TANK_FACTORIES && numLaunchers > 18) {
+			preferredStructure = RobotType.TANKFACTORY;
 		}
 		
 			int numPreferredSupplyDepots = computeNumPreferredSupplyDepots();
@@ -229,9 +237,14 @@ public class HQRobot extends Robot {
 			int x_m = home.x + (armyCheckPoint.x - home.x)/3;
 			int y_m = home.y - (home.y - armyCheckPoint.y)/3;
 			
+			int x_mTank = home.x + (enemyTowers[0].x - home.x)/2;
+			int y_mTank = home.y - (home.y - enemyTowers[0].y)/2;
+			
 			armyCheckPoint = new MapLocation(x_m, y_m);
+			tankCheckPoint = new MapLocation(x_mTank, y_mTank);
 			
 			initialCheckpoint = armyCheckPoint;
+			tankInitialCheckpoint = tankCheckPoint;
 		}
 		
 		// choose closest tower
@@ -256,6 +269,7 @@ public class HQRobot extends Robot {
 		
 		// if army consists of 10 or more units, start advancing
 		RobotInfo[] nearby = rc.senseNearbyRobots(armyCheckPoint, 40, myTeam);
+		RobotInfo[] nearbyTanks = rc.senseNearbyRobots(tankCheckPoint, 60, myTeam);
 		
 		MapLocation newAttackPoint;
 		if (rc.senseEnemyTowerLocations().length > 0)
@@ -279,6 +293,7 @@ public class HQRobot extends Robot {
 				army.put(nearby[i].ID, nearby[i]);
 			}
 			
+			
 			int x_m = armyCheckPoint.x + (newAttackPoint.x - armyCheckPoint.x)/2;
 			int y_m = armyCheckPoint.y - (armyCheckPoint.y - newAttackPoint.y)/2;
 			
@@ -287,8 +302,33 @@ public class HQRobot extends Robot {
 			
 			if (old.distanceSquaredTo(armyCheckPoint) <= RobotType.TOWER.attackRadiusSquared+3)
 				armyCheckPoint = newAttackPoint;
+			
 		} else if (armyCount < 2)
 			armyCheckPoint = initialCheckpoint;
+		
+		
+		int unitsTanks = 0;
+		for (int i = 0; i < nearbyTanks.length; i++) {
+			if (nearbyTanks[i].type == RobotType.TANK)
+				unitsTanks++;
+		}
+		
+		// same but for tanks
+		if (unitsTanks >= Parameters.ARMY_COUNT2) {
+			
+			armyTanks.clear();
+			for (int i = 0; i < nearbyTanks.length; i++) {
+				armyTanks.put(nearbyTanks[i].ID, nearbyTanks[i]);
+			}
+			
+			int x_mTank = tankCheckPoint.x + (enemyTowers[0].x - tankCheckPoint.x)/2;
+			int y_mTank = tankCheckPoint.y - (tankCheckPoint.y - enemyTowers[0].y)/2;
+			
+			tankCheckPoint = new MapLocation(x_mTank, y_mTank);
+			
+		} else if (armyCount2 < 2)
+			tankCheckPoint = tankInitialCheckpoint;
+		
 		
 	}
 
