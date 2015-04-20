@@ -11,6 +11,6 @@ public class Parameters {
 	public static int MAX_TANK_FACTORIES = 4;
 	public static int MAX_BARRACK_UNITS = 0;
 	public static int MAX_LAUNCHERS = 20;
-	public static int ARMY_COUNT = 10;
-	public static int ARMY_COUNT2 = 10;
+	public static int ARMY_COUNT = 5;
+	public static int ARMY_COUNT2 = 12;
 }
