@@ -33,4 +33,7 @@ public class BroadcastChannel {
 	
 	// Channels used to broadcast missile targets
 	public static int MISSILE_BASE = 500;
+	
+	// Channel used by HQ to broadcast the number of rounds left
+	public static int NUM_ROUNDS_LEFT				= 700;
 }
