@@ -5,6 +5,7 @@ import team1.common.Robot;
 import team1.common.SupplyHandler;
 import team1.common.Util;
 import team1.constants.BroadcastChannel;
+import battlecode.common.Clock;
 import battlecode.common.Direction;
 import battlecode.common.GameActionException;
 import battlecode.common.MapLocation;
@@ -47,7 +48,10 @@ public class LauncherRobot extends Robot {
 				} else {
 					// Attack
 					tryMissileLaunch();
-					Action.tryMove(location.directionTo(nearbyEnemies[0].location).opposite(), rc);
+					
+					if(broadcast.readInt(BroadcastChannel.NUM_ROUNDS_LEFT) > 500) {
+						Action.tryMove(location.directionTo(nearbyEnemies[0].location).opposite(), rc);
+					}
 				}
 				
 				return;

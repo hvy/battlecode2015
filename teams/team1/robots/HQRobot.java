@@ -11,6 +11,7 @@ import team1.common.Util;
 import team1.constants.BroadcastChannel;
 import team1.constants.StructureConstants;
 import team1.constants.UnitConstants;
+import battlecode.common.Clock;
 import battlecode.common.GameActionException;
 import battlecode.common.GameConstants;
 import battlecode.common.MapLocation;
@@ -70,6 +71,9 @@ public class HQRobot extends Robot {
 	
 	@Override
 	public void run() throws Exception {
+		
+		int numRoundsLeft = rc.getRoundLimit() - Clock.getRoundNum();
+		broadcast.sendInt(BroadcastChannel.NUM_ROUNDS_LEFT, numRoundsLeft);
 
 		setArmyCheckPoint();
 		
@@ -185,6 +189,8 @@ public class HQRobot extends Robot {
 			preferredStructure = RobotType.BARRACKS;
 		} else if (numTankfactories < Parameters.MAX_TANK_FACTORIES && numLaunchers > 18) {
 			preferredStructure = RobotType.TANKFACTORY;
+		} else if (numHandwashStations < 1) {
+			preferredStructure = RobotType.HANDWASHSTATION;
 		}
 		
 			int numPreferredSupplyDepots = computeNumPreferredSupplyDepots();

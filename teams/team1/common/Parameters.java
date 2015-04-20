@@ -12,5 +12,9 @@ public class Parameters {
 	public static int MAX_BARRACK_UNITS = 0;
 	public static int MAX_LAUNCHERS = 20;
 	public static int ARMY_COUNT = 5;
+<<<<<<< HEAD
 	public static int ARMY_COUNT2 = 12;
+=======
+	public static int ARMY_COUNT2 = 5;
+>>>>>>> origin/master
 }
